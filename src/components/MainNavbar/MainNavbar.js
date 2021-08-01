@@ -51,7 +51,7 @@ export default function MainNavbar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/" className="pe-4">
+              <Nav.Link as={Link} to="/contact" className="pe-4">
                 Contact
               </Nav.Link>
             </Nav.Item>

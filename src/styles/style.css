@@ -1864,13 +1864,6 @@ li {
 }
 
 /* background pages */
-.default-header.wordpress-page {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/wordpress.jpeg) center; */
-}
-
-.default-header.cloud-page {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/cloud.jpeg) center; */
-}
 
 .default-header.shared-page {
   background: linear-gradient(
@@ -1882,30 +1875,31 @@ li {
     url(/headers/shared.jpeg) center;
 }
 
-.default-header.dedicated-page {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/dedicated.jpeg) center; */
-}
-
 .default-header.about-page {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/about.jpeg) center; */
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 0%,
+      transparent 80%,
+      transparent 100%
+    ),
+    url(/headers/about.jpeg) center;
 }
 
 .default-header.contact-page {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/contact.jpeg) center; */
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 0%,
+      transparent 80%,
+      transparent 100%
+    ),
+    url(/headers/contact.jpeg) center;
 }
 
 .default-header.error-page {
   /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/error.jpeg) center; */
   padding: 150px 0;
 }
-.default-header.domain-page {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/domain.jpeg) center; */
-  padding: 150px 0;
-}
-.default-header.ssl-page {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%), url(../images/headers/ssl.jpeg) center; */
-  padding: 150px 0 250px;
-}
+
 /* background pages ends here*/
 .default-header h2,
 .default-header h3,
