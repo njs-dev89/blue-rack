@@ -7,7 +7,7 @@ export default function LayoutTextLeft() {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div className="text-container" /*data-aos="fade-up"*/>
+            <div className="text-container" data-aos="fade-up">
               <h3>Unlimited Free Premium Support</h3>
               <div className="text-content">
                 <div className="text">
@@ -35,12 +35,14 @@ export default function LayoutTextLeft() {
             <StaticImage
               src="../images/png-images/laptop.png"
               className="img-responsive"
-              alt="" /*data-aos="fade-right"*/
+              alt=""
+              data-aos="fade-right"
             />
             <StaticImage
               src="../images/png-images/world2.png"
               className="img-absolute"
-              alt="" /*data-aos="fade-right"*/
+              alt=""
+              data-aos="fade-right"
             />
           </div>
         </div>

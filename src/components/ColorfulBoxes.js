@@ -16,7 +16,10 @@ export default function ColorfulBoxes() {
         <div className="row">
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="box-container box1">
-              <FaMicrochip className="fa fa-microchip"></FaMicrochip>
+              <div className="pull-left">
+                <FaMicrochip className="fa fa-microchip"></FaMicrochip>
+              </div>
+
               <h4>Multi Core Xenon Processors</h4>
               <p>
                 There are many variations of passages of Lorem Ipsum available,
@@ -31,7 +34,10 @@ export default function ColorfulBoxes() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="box-container box2">
-              <FaServer className="fa fa-server"></FaServer>
+              <div className="pull-left">
+                <FaServer className="fa fa-server"></FaServer>
+              </div>
+
               <h4>Managed Dedicated Servers</h4>
               <p>
                 There are many variations of passages of Lorem Ipsum available,
@@ -46,7 +52,10 @@ export default function ColorfulBoxes() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="box-container box3">
-              <FaHdd className="fa fa-hdd"></FaHdd>
+              <div className="pull-left">
+                <FaHdd className="fa fa-hdd"></FaHdd>
+              </div>
+
               <h4>Unlimited Space and Bandwidth</h4>
               <p>
                 There are many variations of passages of Lorem Ipsum available,

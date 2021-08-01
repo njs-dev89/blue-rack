@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { FaPlus, FaTimes } from "react-icons/fa";
 
 export default function FeaturesStyleTwo() {
   return (
@@ -24,24 +25,59 @@ export default function FeaturesStyleTwo() {
                     <h4>Shared Hosting Features</h4>
                     <ul>
                       <li>
-                        <i className="fa fa-plus"></i> It is a long established
-                        fact that a reader
+                        <FaPlus
+                          className="fa fa-plus"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaPlus>{" "}
+                        It is a long established fact that a reader
                       </li>
                       <li>
-                        <i className="fa fa-plus"></i> Many desktop publishing
-                        packages web page
+                        <FaPlus
+                          className="fa fa-plus"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaPlus>{" "}
+                        Many desktop publishing packages web page
                       </li>
                       <li>
-                        <i className="fa fa-plus"></i> Various versions have
-                        evolved over the
+                        <FaPlus
+                          className="fa fa-plus"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaPlus>{" "}
+                        Various versions have evolved over the
                       </li>
                       <li>
-                        <i className="fa fa-plus"></i> It is a long established
-                        fact that a reader
+                        <FaPlus
+                          className="fa fa-plus"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaPlus>{" "}
+                        It is a long established fact that a reader
                       </li>
                       <li>
-                        <i className="fa fa-plus"></i> All the Lorem Ipsum
-                        generators on the Internet
+                        <FaPlus
+                          className="fa fa-plus"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaPlus>{" "}
+                        All the Lorem Ipsum generators on the Internet
                       </li>
                     </ul>
                   </div>
@@ -49,24 +85,59 @@ export default function FeaturesStyleTwo() {
                     <h4>Cloud Hosting Features</h4>
                     <ul>
                       <li>
-                        <i className="fa fa-times"></i> Contrary to popular
-                        belief lorem Ipsum is not
+                        <FaTimes
+                          className="fa fa-times"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaTimes>{" "}
+                        Contrary to popular belief lorem Ipsum is not
                       </li>
                       <li>
-                        <i className="fa fa-times"></i> All the Lorem Ipsum
-                        generators on the Internet
+                        <FaTimes
+                          className="fa fa-times"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaTimes>{" "}
+                        All the Lorem Ipsum generators on the Internet
                       </li>
                       <li>
-                        <i className="fa fa-times"></i> Many desktop publishing
-                        packages and error
+                        <FaTimes
+                          className="fa fa-times"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaTimes>{" "}
+                        Many desktop publishing packages and error
                       </li>
                       <li>
-                        <i className="fa fa-times"></i> Many desktop publishing
-                        packages web page
+                        <FaTimes
+                          className="fa fa-times"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaTimes>{" "}
+                        Many desktop publishing packages web page
                       </li>
                       <li>
-                        <i className="fa fa-times"></i> All the Lorem Ipsum
-                        generators on the Internet
+                        <FaTimes
+                          className="fa fa-times"
+                          style={{
+                            color: "#14d468",
+                            marginRight: "2px",
+                            paddingTop: "3px",
+                          }}
+                        ></FaTimes>{" "}
+                        All the Lorem Ipsum generators on the Internet
                       </li>
                     </ul>
                   </div>

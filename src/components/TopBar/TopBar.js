@@ -2,7 +2,7 @@ import React from "react";
 import "./TopBar.css";
 export default function TopBar() {
   return (
-    <div className="top-bar margin-for-home">
+    <div className="top-bar margin-for-home" id="top-bar">
       <div className="custom-width">
         <div className="left-topbar aligment-for-home">
           <p>Welcome to Bluerack</p>

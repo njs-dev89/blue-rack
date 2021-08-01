@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  FaAws,
+  FaBullhorn,
+  FaCode,
+  FaGem,
+  FaServer,
+  FaWordpress,
+} from "react-icons/fa";
 
 export default function ColorfulSection() {
   return (
@@ -14,7 +22,9 @@ export default function ColorfulSection() {
         <div className="row">
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="text-content">
-              <i className="fab fa-aws pull-left" data-aos="zoom-in"></i>
+              <div className="fab fa-aws pull-left" data-aos="zoom-in">
+                <FaAws />
+              </div>
               <div className="text">
                 <h4>Optimized for AWS Connection</h4>
                 <p>
@@ -26,11 +36,13 @@ export default function ColorfulSection() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="text-content">
-              <i
+              <div
                 className="fa fa-bullhorn pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="100"
-              ></i>
+              >
+                <FaBullhorn />
+              </div>
               <div className="text">
                 <h4>Subscribe free for daily offers</h4>
                 <p>
@@ -42,11 +54,13 @@ export default function ColorfulSection() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="text-content">
-              <i
+              <div
                 className="fa fa-server pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="200"
-              ></i>
+              >
+                <FaServer />
+              </div>
               <div className="text">
                 <h4>Try free our powerful servers</h4>
                 <p>
@@ -60,7 +74,9 @@ export default function ColorfulSection() {
         <div className="row">
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="text-content">
-              <i className="fa fa-code pull-left" data-aos="zoom-in"></i>
+              <div className="fa fa-code pull-left" data-aos="zoom-in">
+                <FaCode />
+              </div>
               <div className="text">
                 <h4>Unlimited and Full Root Access</h4>
                 <p>
@@ -72,11 +88,13 @@ export default function ColorfulSection() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="text-content">
-              <i
+              <div
                 className="fab fa-wordpress pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="100"
-              ></i>
+              >
+                <FaWordpress />
+              </div>
               <div className="text">
                 <h4>Powerful wordpress hosting</h4>
                 <p>
@@ -88,11 +106,13 @@ export default function ColorfulSection() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div className="text-content">
-              <i
+              <div
                 className="fa fa-gem pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="200"
-              ></i>
+              >
+                <FaGem />
+              </div>
               <div className="text">
                 <h4>Premium services and offers</h4>
                 <p>

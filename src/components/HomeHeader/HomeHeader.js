@@ -6,7 +6,10 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
+  FaLinkedinIn,
   FaPhone,
+  FaRegComments,
+  FaRegEnvelopeOpen,
   FaTwitter,
 } from "react-icons/fa";
 import "./HomeHeader.css";
@@ -26,28 +29,28 @@ export default function HomeHeader() {
       <div className="left-sidebar">
         <div className="contact-links link-style">
           <a /*data-toggle="modal" data-target="#myModal"*/>
-            <FaPhone />
+            <FaPhone className="side-icon" />
           </a>
           <a /*data-toggle="modal" data-target="#myModal"*/>
-            <FaEnvelopeOpen />
-          </a>
-          <a /*data-toggle="modal" data-target="#myModal"*/>
-            <FaComments />
+            <FaRegEnvelopeOpen className="side-icon" />
             <div className="notification">+</div>
+          </a>
+          <a /*data-toggle="modal" data-target="#myModal"*/>
+            <FaRegComments className="side-icon" />
           </a>
         </div>
         <div className="sidebar-socials link-style">
           <a href="#">
-            <FaFacebookF />
+            <FaFacebookF className="side-icon" />
           </a>
           <a href="#">
-            <FaInstagram />
+            <FaInstagram className="side-icon" />
           </a>
           <a href="#">
-            <FaTwitter />
+            <FaTwitter className="side-icon" />
           </a>
           <a href="#">
-            <FaLinkedin />
+            <FaLinkedinIn className="side-icon" />
           </a>
         </div>
       </div>

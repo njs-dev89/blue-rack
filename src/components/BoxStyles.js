@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCloud, FaPlus, FaServer } from "react-icons/fa";
 
 export default function BoxStyles() {
   return (
@@ -16,15 +17,34 @@ export default function BoxStyles() {
             <div className="box-container">
               <div className="box-title">
                 <h4>
-                  <i className="fa fa-plus"></i> Wordpress Hosting
+                  <FaPlus
+                    className="fa fa-plus"
+                    style={{ color: "#14d468" }}
+                  ></FaPlus>{" "}
+                  Wordpress Hosting
                 </h4>
               </div>
               <ul>
-                <li>Fully Managed Servers</li>
-                <li>Unlimited Space and Bandwidth</li>
-                <li>Powerful and new servers</li>
-                <li>Based on SSD Space</li>
-                <li>Unlimited Free 24/7 Support</li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Fully Managed Servers
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Unlimited Space and Bandwidth
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Powerful and new servers
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Based on SSD Space
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Unlimited Free 24/7 Support
+                </li>
               </ul>
               <div className="buttons">
                 <a href="#" className="btn btn-green btn-small">
@@ -40,15 +60,34 @@ export default function BoxStyles() {
             <div className="box-container">
               <div className="box-title">
                 <h4>
-                  <i className="fa fa-cloud"></i> Cloud Computing
+                  <FaCloud
+                    className="fa fa-cloud"
+                    style={{ color: "#14d468" }}
+                  ></FaCloud>{" "}
+                  Cloud Computing
                 </h4>
               </div>
               <ul>
-                <li>Fully Managed Servers</li>
-                <li>Unlimited Space and Bandwidth</li>
-                <li>Powerful and new servers</li>
-                <li>Based on SSD Space</li>
-                <li>Unlimited Free 24/7 Support</li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Fully Managed Servers
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Unlimited Space and Bandwidth
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Powerful and new servers
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Based on SSD Space
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Unlimited Free 24/7 Support
+                </li>
               </ul>
               <div className="buttons">
                 <a href="#" className="btn btn-green btn-small">
@@ -64,15 +103,31 @@ export default function BoxStyles() {
             <div className="box-container">
               <div className="box-title">
                 <h4>
-                  <i className="fa fa-server"></i> Dedicated Servers
+                  <FaServer style={{ color: "#14d468" }}></FaServer> Dedicated
+                  Servers
                 </h4>
               </div>
               <ul>
-                <li>Fully Managed Servers</li>
-                <li>Unlimited Space and Bandwidth</li>
-                <li>Powerful and new servers</li>
-                <li>Based on SSD Space</li>
-                <li>Unlimited Free 24/7 Support</li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Fully Managed Servers
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Unlimited Space and Bandwidth
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Powerful and new servers
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Based on SSD Space
+                </li>
+                <li>
+                  <FaPlus className="fa-list" />
+                  Unlimited Free 24/7 Support
+                </li>
               </ul>
               <div className="buttons">
                 <a href="#" className="btn btn-green btn-small">

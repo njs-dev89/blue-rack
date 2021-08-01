@@ -1,4 +1,5 @@
 import React from "react";
+import { FaShare } from "react-icons/fa";
 
 export default function VpsPricing() {
   return (
@@ -24,7 +25,7 @@ export default function VpsPricing() {
                 <th>Order</th>
               </tr>
             </thead>
-            <tr /*data-aos="fade-up" data-aos-delay="50"*/>
+            <tr data-aos="fade-up" data-aos-delay="50">
               <td>Intel Xeon X5565</td>
               <td>Unlimited Space</td>
               <td>100GB Bandwidth</td>
@@ -32,12 +33,15 @@ export default function VpsPricing() {
               <td>Yes</td>
               <td className="price-in-table">79.99$/month</td>
               <td>
-                <button className="btn btn-small btn-green">
-                  Order Now<i className="fas fa-share"></i>
+                <button
+                  className="btn btn-green mt-3"
+                  style={{ backgroundColor: "#14d468" }}
+                >
+                  Order Now<FaShare className="fas fa-share ms-1"></FaShare>
                 </button>
               </td>
             </tr>
-            <tr /*data-aos="fade-up" data-aos-delay="100"*/>
+            <tr data-aos="fade-up" data-aos-delay="100">
               <td>Intel Xeon X5565</td>
               <td>Unlimited Space</td>
               <td>100GB Bandwidth</td>
@@ -45,12 +49,15 @@ export default function VpsPricing() {
               <td>Yes</td>
               <td className="price-in-table">99.99$/month</td>
               <td>
-                <button className="btn btn-small btn-green">
-                  Order Now<i className="fas fa-share"></i>
+                <button
+                  className="btn btn-green mt-3"
+                  style={{ backgroundColor: "#14d468" }}
+                >
+                  Order Now<FaShare className="fas fa-share ms-1"></FaShare>
                 </button>
               </td>
             </tr>
-            <tr /*data-aos="fade-up" data-aos-delay="150"*/>
+            <tr data-aos="fade-up" data-aos-delay="150">
               <td>Intel Xeon X5565</td>
               <td>Unlimited Space</td>
               <td>100GB Bandwidth</td>
@@ -58,12 +65,15 @@ export default function VpsPricing() {
               <td>No</td>
               <td className="price-in-table">59.99$/month</td>
               <td>
-                <button className="btn btn-small btn-green">
-                  Order Now<i className="fas fa-share"></i>
+                <button
+                  className="btn btn-green mt-3"
+                  style={{ backgroundColor: "#14d468" }}
+                >
+                  Order Now<FaShare className="fas fa-share ms-1"></FaShare>
                 </button>
               </td>
             </tr>
-            <tr /*data-aos="fade-up" data-aos-delay="200"*/>
+            <tr data-aos="fade-up" data-aos-delay="200">
               <td>Intel Xeon X5565</td>
               <td>Unlimited Space</td>
               <td>100GB Bandwidth</td>
@@ -71,12 +81,15 @@ export default function VpsPricing() {
               <td>No</td>
               <td className="price-in-table">29.99$/month</td>
               <td>
-                <button className="btn btn-small btn-green">
-                  Order Now<i className="fas fa-share"></i>
+                <button
+                  className="btn btn-green mt-3"
+                  style={{ backgroundColor: "#14d468" }}
+                >
+                  Order Now<FaShare className="fas fa-share ms-1"></FaShare>
                 </button>
               </td>
             </tr>
-            <tr /*data-aos="fade-up" data-aos-delay="250"*/>
+            <tr data-aos="fade-up" data-aos-delay="250">
               <td>Intel Xeon X5565</td>
               <td>Unlimited Space</td>
               <td>100GB Bandwidth</td>
@@ -84,12 +97,15 @@ export default function VpsPricing() {
               <td>No</td>
               <td className="price-in-table">49.99$/month</td>
               <td>
-                <button className="btn btn-small btn-green">
-                  Order Now<i className="fas fa-share"></i>
+                <button
+                  className="btn btn-green mt-3"
+                  style={{ backgroundColor: "#14d468" }}
+                >
+                  Order Now<FaShare className="fas fa-share ms-1"></FaShare>
                 </button>
               </td>
             </tr>
-            <tr /*data-aos="fade-up" data-aos-delay="300"*/>
+            <tr data-aos="fade-up" data-aos-delay="300">
               <td>Intel Xeon X5565</td>
               <td>Unlimited Space</td>
               <td>100GB Bandwidth</td>
@@ -97,8 +113,11 @@ export default function VpsPricing() {
               <td>Yes</td>
               <td className="price-in-table">89.99$/month</td>
               <td>
-                <button className="btn btn-small btn-green">
-                  Order Now<i className="fas fa-share"></i>
+                <button
+                  className="btn btn-green mt-3"
+                  style={{ backgroundColor: "#14d468" }}
+                >
+                  Order Now<FaShare className="fas fa-share ms-1"></FaShare>
                 </button>
               </td>
             </tr>

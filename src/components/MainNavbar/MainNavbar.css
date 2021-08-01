@@ -1,5 +1,10 @@
 nav.navbar {
-  background-color: white !important;
+  background-color: transparent !important;
+}
+
+.navbar-raise {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(73, 61, 94, 0.09);
 }
 
 .dropdown-menu .dropdown-item.active {

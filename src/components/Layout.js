@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TopBar from "./TopBar/TopBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/other/aos.css";
@@ -9,6 +9,25 @@ import Footer from "./Footer";
 import MainNavbar from "./MainNavbar/MainNavbar";
 
 export default function Layout({ children }) {
+  let AOS;
+  useEffect(() => {
+    const AOS = require("aos");
+    AOS.init();
+    if (typeof window !== "undefined") {
+      const navbar = document.querySelector("#navbar");
+      const topBarHeight = document.querySelector("#top-bar").scrollHeight;
+      window.addEventListener("scroll", () => {
+        if (window.scrollTop === topBarHeight) {
+          navbar.classList.add("nav-raise");
+        }
+      });
+    }
+  }, []);
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
   return (
     <>
       <TopBar />

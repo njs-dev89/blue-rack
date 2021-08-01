@@ -7,7 +7,7 @@ import "./MainNavbar.css";
 
 export default function MainNavbar() {
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar bg="light" expand="lg" sticky="top" id="navbar">
       <Container>
         {/* <Navbar.Brand href="#home"> */}
         <StaticImage src="../../images/logo/logo.png" className="logo" />

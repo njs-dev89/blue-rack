@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  FaAws,
+  FaBullhorn,
+  FaCode,
+  FaGem,
+  FaServer,
+  FaWordpress,
+} from "react-icons/fa";
 
 export default function FeaturesFive() {
   return (
@@ -14,7 +22,9 @@ export default function FeaturesFive() {
         <div className="row">
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div className="text-content">
-              <i className="fab fa-aws pull-left" data-aos="zoom-in"></i>
+              <div className="fab fa-aws pull-left" data-aos="zoom-in">
+                <FaAws></FaAws>
+              </div>
               <div className="text">
                 <h4>Optimized for Speed</h4>
                 <p>
@@ -26,11 +36,14 @@ export default function FeaturesFive() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div className="text-content">
-              <i
-                className="fa fa-bullhorn pull-left"
+              <div
+                className="fab fa-aws pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="100"
-              ></i>
+              >
+                <FaBullhorn></FaBullhorn>
+              </div>
+
               <div className="text">
                 <h4>Internet Marketing Included</h4>
                 <p>
@@ -42,11 +55,14 @@ export default function FeaturesFive() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div className="text-content">
-              <i
-                className="fa fa-server pull-left"
+              <div
+                className="fab fa-aws pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="200"
-              ></i>
+              >
+                <FaServer></FaServer>
+              </div>
+
               <div className="text">
                 <h4>Free Trial For One Month</h4>
                 <p>
@@ -60,7 +76,10 @@ export default function FeaturesFive() {
         <div className="row mt-5">
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div className="text-content">
-              <i className="fa fa-code pull-left" data-aos="zoom-in"></i>
+              <div className="fab fa-aws pull-left" data-aos="zoom-in">
+                <FaCode></FaCode>
+              </div>
+
               <div className="text">
                 <h4>Full Root Access</h4>
                 <p>
@@ -72,11 +91,14 @@ export default function FeaturesFive() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div className="text-content">
-              <i
-                className="fab fa-wordpress pull-left"
+              <div
+                className="fab fa-aws pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="100"
-              ></i>
+              >
+                <FaWordpress></FaWordpress>
+              </div>
+
               <div className="text">
                 <h4>Powerful wordpress hosting</h4>
                 <p>
@@ -88,11 +110,14 @@ export default function FeaturesFive() {
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div className="text-content">
-              <i
-                className="fa fa-gem pull-left"
+              <div
+                className="fab fa-aws pull-left"
                 data-aos="zoom-in"
                 data-aos-delay="200"
-              ></i>
+              >
+                <FaGem></FaGem>
+              </div>
+
               <div className="text">
                 <h4>Premium services and offers</h4>
                 <p>

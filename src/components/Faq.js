@@ -5,10 +5,11 @@ export default function Faq() {
     <div className="faq padding-bottom50 padding-top50 gray-bg">
       <div className="custom-width">
         <h3>Frequently Aksed Questions</h3>
+
         <div className="accordion">
-          <div className="accordion-item">
+          <div className="accordion-item" eventKey="0">
             <a>What are some tips when choosing a hosting package?</a>
-            <div className="content">
+            <div className="content" eventKey="0">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.

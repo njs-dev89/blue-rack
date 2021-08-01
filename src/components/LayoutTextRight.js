@@ -1,9 +1,10 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function LayoutTextRight() {
   return (
-    <div class="layout-text right-layout padding-bottom50 padding-top50">
+    <div class="layout-text right-layout gray-layout padding-bottom50 padding-top50">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -21,10 +22,13 @@ export default function LayoutTextRight() {
             />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="text-container" /*data-aos="fade-up"*/>
+            <div class="text-container" data-aos="fadeIn-up">
               <h3>Fully Managed and Powerful Website Hosting</h3>
               <div class="text-content">
-                <i class="far fa-check-circle pull-left"></i>
+                <div className="pull-left">
+                  <FaCheckCircle class="far fa-check-circle pull-left"></FaCheckCircle>
+                </div>
+
                 <div class="text">
                   <p>
                     It is a long established fact that a reader will be
@@ -35,7 +39,9 @@ export default function LayoutTextRight() {
                 </div>
               </div>
               <div class="text-content">
-                <i class="far fa-check-circle pull-left"></i>
+                <div className="pull-left">
+                  <FaCheckCircle class="far fa-check-circle pull-left"></FaCheckCircle>
+                </div>
                 <div class="text">
                   <p>
                     It is a long established fact that a reader will be

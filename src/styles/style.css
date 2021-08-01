@@ -348,6 +348,7 @@ li {
   transition: 0.1s linear;
   border-radius: 3px;
   color: #838eb1;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -1112,8 +1113,11 @@ li {
   color: #929fc5;
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
+.dedicated-pricing tr:nth-child(even) {
   background: #f7f9ff;
+}
+.dedicated-pricing tr td {
+  padding: 12px;
 }
 
 /* pricing table */
@@ -1129,6 +1133,7 @@ li {
 
 .dual-section .features {
   margin-bottom: 45px;
+  display: flex;
 }
 .dual-section .features:last-child {
   margin-bottom: 0;
@@ -1143,9 +1148,10 @@ li {
   color: rgb(237, 240, 250);
 }
 
-.dual-section i {
+.dual-section .pull-left {
   border: 1px solid rgba(255, 255, 255, 0.2);
   height: 55px;
+  min-width: 60px;
   width: 60px;
   line-height: 55px;
   text-align: center;
@@ -1200,7 +1206,7 @@ li {
   text-align: center;
 }
 
-.tabs .tab-title h3 {
+.tab-content .tab-title h3 {
   font-size: 30px;
   display: inline-block;
   padding-top: 10px;
@@ -1208,7 +1214,7 @@ li {
   color: #5e58aa;
 }
 
-.tabs .tab-title p {
+.tab-content .tab-title p {
   font-size: 15px;
 }
 
@@ -1218,16 +1224,39 @@ li {
   border-bottom: 1px solid #eaebfd;
 }
 
-.tabs h4 {
+.host-feature h4 {
   font-size: 20px;
   font-weight: 400;
 }
+.host-feature p {
+  font-size: 14px;
+  font-weight: 400;
+}
 
-.tabs .hosting-tabs {
+.hosting-tabs {
   background-color: #eaebfd;
 }
 
-.tabs ul.nav.nav-tabs {
+.hosting-tabs .nav-tabs {
+  justify-content: center;
+
+  border: 0;
+}
+
+.hosting-tabs .nav-tabs .nav-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 0;
+}
+.hosting-tabs .nav-tabs .nav-link.active:hover {
+  background-color: white;
+}
+.hosting-tabs .nav-tabs .nav-link.active {
+  height: 100%;
+  border-radius: 0px !important;
+}
+
+.tabs div.nav.nav-tabs {
   margin-top: 0 !important;
 }
 
@@ -1272,7 +1301,12 @@ li {
   display: grid;
 }
 
-.tabs .tab-lists i {
+.host-feature {
+  display: flex;
+  margin-top: 40px;
+}
+
+.host-feature > .pull-left {
   width: 40px;
   height: 40px;
   background: #14d468;
@@ -1442,6 +1476,11 @@ li {
 .features-two li {
   padding-bottom: 13px;
   display: flex;
+  align-items: baseline;
+  font-size: 14px;
+}
+.features-two h4 {
+  font-size: 18px;
 }
 
 .features-two .box-shadow {
@@ -1535,10 +1574,16 @@ li {
   text-align: center;
 }
 
-.features-six .text i {
+.features-six .text .pull-left {
   color: #ffffff;
   font-size: 25px;
   width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   height: 70px;
   line-height: 70px;
   background: #4ce28d;
@@ -1576,10 +1621,14 @@ li {
 /* Features style six ends here */
 
 /* Tripple cols */
-.tripple-cols i {
+.tripple-cols .pull-left {
   background: #14d468;
   font-size: 27px;
   margin: 5px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   color: #fff;
   border: 1px solid rgba(206, 146, 77, 0.1);
   width: 65px;
@@ -1596,6 +1645,7 @@ li {
 }
 .tripple-cols .text {
   overflow: hidden;
+  font-size: 14px;
 }
 /* Tripple cols ends here */
 
@@ -1762,9 +1812,20 @@ li {
   margin-bottom: 40px;
 }
 
-.features-five i {
+.features-five .text-content {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.features-five .pull-left {
   color: #14d468;
   background: #ffffff;
+
+  padding: 10px;
+  display: flex;
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
   border: 1px dashed rgba(147, 190, 122, 0.3);
   width: 55px;
   height: 50px;
@@ -1790,9 +1851,12 @@ li {
 }
 
 .ff-five2 {
-  /* background: linear-gradient(135deg, rgba(56, 48, 109, 0.97
-    ) 0%, rgba(56, 48, 109, 0.8
-    )100%), url(../images/other/datacenter.png) center; */
+  background: linear-gradient(
+      135deg,
+      rgba(56, 48, 109, 0.97) 0%,
+      rgba(56, 48, 109, 0.8) 100%
+    ),
+    url(/other/datacenter.png) center;
   background-attachment: fixed;
 }
 .ff-five2 .buttons .btn {
@@ -1807,7 +1871,7 @@ li {
   color: #c5bedb;
 }
 
-.ff-five2 i {
+.ff-five2 .pull-left {
   background: transparent;
   border: 1px dashed rgba(255, 255, 255, 0.2);
   color: #3dd656;
@@ -2092,10 +2156,14 @@ li {
   overflow: hidden;
 }
 
-.layout-text .text-content i {
+.layout-text .text-content .pull-left {
   color: #14d468;
   margin: 5px 8px 0 0;
   font-size: 18px;
+}
+.layout-text .text-content {
+  display: flex;
+  align-items: baseline;
 }
 
 /* Texting Layouts ends here */
@@ -2106,9 +2174,10 @@ li {
   background-size: contain;
 }
 
-.colorful-boxes i {
+.colorful-boxes .pull-left {
   font-size: 65px;
   margin: 50px 0 30px;
+  padding-top: 20px;
   color: #fff;
 }
 .colorful-boxes .buttons {
@@ -2416,6 +2485,8 @@ li {
 .boxes-two .box-title {
   border-bottom: 1px solid #f0f0f0;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .boxes-two .box-title h4 {
@@ -2439,14 +2510,13 @@ li {
   line-height: 30px;
   display: flex;
   font-size: 15px;
+  align-items: center;
 }
 
-.boxes-two li::before {
-  content: "\f067";
-  font-family: "Font Awesome 5 Free";
+.fa-list {
   font-weight: 900;
   color: inherit;
-  font-size: 10px;
+  font-size: 14px;
   padding-right: 5px;
 }
 
@@ -2677,12 +2747,19 @@ li {
 .colorful-section p {
   color: #f3edfd;
 }
-
-.colorful-section i {
+.colorful-section .text-content {
+  display: flex;
+  align-items: flex-start;
+}
+.colorful-section .pull-left {
   color: #ffffff;
   font-size: 22px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
   width: 55px;
   height: 50px;
   line-height: 50px;
@@ -2699,9 +2776,10 @@ li {
 footer h5 {
   font-family: "Open Sans";
 }
-footer .social-media i {
+footer .social-media span {
   margin: 0 2px 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
   width: 33px;
   height: 30px;
   border-radius: 3px;
@@ -2754,13 +2832,8 @@ footer .location-info i {
   font-size: 13px;
 }
 
-footer.dark-footer li::before {
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 10px;
-  color: #14d468;
-  padding-right: 5px;
+.dark-footer a {
+  text-decoration: none;
 }
 
 footer .partners {
@@ -2779,14 +2852,6 @@ footer .partners img:hover {
 }
 footer .partners-light img {
   opacity: 1;
-}
-
-footer.light-footer li::before {
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 10px;
-  padding-right: 5px;
 }
 
 .quick-links {

@@ -1,4 +1,14 @@
 import React from "react";
+import {
+  FaComments,
+  FaDatabase,
+  FaEnvelope,
+  FaExchangeAlt,
+  FaHdd,
+  FaMicrochip,
+  FaRocket,
+  FaServer,
+} from "react-icons/fa";
 
 export default function FeaturesStyleThree() {
   return (
@@ -16,7 +26,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-envelope"></i>
+                  <div className="pull-left">
+                    <FaEnvelope className="fa fa-envelope"></FaEnvelope>
+                  </div>
                 </div>
                 <h4>Unlimited Ticket Support</h4>
                 <p>
@@ -31,7 +43,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-rocket"></i>
+                  <div className="pull-left">
+                    <FaRocket className="fa fa-envelope"></FaRocket>
+                  </div>
                 </div>
                 <h4>Light Speed Servers</h4>
                 <p>
@@ -46,7 +60,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-comments"></i>
+                  <div className="pull-left">
+                    <FaComments></FaComments>
+                  </div>
                 </div>
                 <h4>24/7 Livechat Support</h4>
                 <p>
@@ -61,7 +77,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-microchip"></i>
+                  <div className="pull-left">
+                    <FaMicrochip className="fa fa-envelope"></FaMicrochip>
+                  </div>
                 </div>
                 <h4>Intel Xenon Processors</h4>
                 <p>
@@ -78,7 +96,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-hdd"></i>
+                  <div className="pull-left">
+                    <FaHdd className="fa fa-envelope"></FaHdd>
+                  </div>
                 </div>
                 <h4>Based on SSD Space</h4>
                 <p>
@@ -93,7 +113,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-server"></i>
+                  <div className="pull-left">
+                    <FaServer className="fa fa-envelope"></FaServer>
+                  </div>
                 </div>
                 <h4>Modern Datacenter</h4>
                 <p>
@@ -108,7 +130,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-database"></i>
+                  <div className="pull-left">
+                    <FaDatabase className="fa fa-envelope"></FaDatabase>
+                  </div>
                 </div>
                 <h4>Unlimited MySQL Databases</h4>
                 <p>
@@ -123,7 +147,9 @@ export default function FeaturesStyleThree() {
             <div className="text-container">
               <div className="text">
                 <div className="img-content">
-                  <i className="fa fa-exchange-alt"></i>
+                  <div className="pull-left">
+                    <FaExchangeAlt className="fa fa-envelope"></FaExchangeAlt>
+                  </div>
                 </div>
                 <h4>Unlimited Data Transfer</h4>
                 <p>

@@ -1,10 +1,15 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Nav, Tab, TabPane } from "react-bootstrap";
+import { FaCheck } from "react-icons/fa";
 
 export default function TabSwitcher() {
   return (
-    <Tab.Container className="tabs padding-bottom30">
+    <Tab.Container
+      className=" padding-bottom30"
+      defaultActiveKey="one"
+      style={{ backgroundColor: "#f7f5ff" }}
+    >
       <div className="hosting-tabs">
         <Nav className="nav nav-tabs">
           <Nav.Item className="">
@@ -32,7 +37,7 @@ export default function TabSwitcher() {
           </Nav.Item>
         </Nav>
       </div>
-      <div className="custom-width">
+      <div className="custom-width mt-5">
         <div className="row">
           <Tab.Content className="tab-content">
             <Tab.Pane id="home" eventKey="one" className="tab-pane in">
@@ -56,10 +61,12 @@ export default function TabSwitcher() {
                     </div>
                     <div className="tab-lists">
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Fully Managed with unlimited Bandwidth</h4>
                           <p>
@@ -69,11 +76,14 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="100"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
+
                         <div className="text">
                           <h4>Multi procesors and ram memmories</h4>
                           <p>
@@ -83,11 +93,13 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="200"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Based on cloud computing and SSD Space</h4>
                           <p>

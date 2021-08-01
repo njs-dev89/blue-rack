@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { FaCheckCircle, FaLongArrowAltRight } from "react-icons/fa";
 
 export default function SharedLayoutRight() {
   return (
@@ -11,14 +12,16 @@ export default function SharedLayoutRight() {
               src="../images/png-images/layouts1.png"
               className="img-responsive img-shadow"
               alt=""
-              //   data-aos="fade-right"
+              data-aos="fadeIn-right"
             />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div className="text-container" /*data-aos="fade-up"*/>
+            <div className="text-container" data-aos="fade-up">
               <h3>Fully Managed and Unlimited Premium Support</h3>
               <div className="text-content">
-                <i className="far fa-check-circle pull-left"></i>
+                <div className="pull-left">
+                  <FaCheckCircle class="far fa-check-circle pull-left"></FaCheckCircle>
+                </div>
                 <div className="text">
                   <p>
                     It is a long established fact that a reader will be
@@ -29,7 +32,9 @@ export default function SharedLayoutRight() {
                 </div>
               </div>
               <div className="text-content">
-                <i className="far fa-check-circle pull-left"></i>
+                <div className="pull-left">
+                  <FaCheckCircle class="far fa-check-circle pull-left"></FaCheckCircle>
+                </div>
                 <div className="text">
                   <p>
                     It is a long established fact that a reader will be
@@ -41,7 +46,7 @@ export default function SharedLayoutRight() {
               <div className="buttons">
                 <a href="#" className="btn btn-medium btn-green">
                   Get More Information{" "}
-                  <i className="fas fa-long-arrow-alt-right"></i>
+                  <FaLongArrowAltRight className="fas fa-long-arrow-alt-right"></FaLongArrowAltRight>
                 </a>
               </div>
             </div>

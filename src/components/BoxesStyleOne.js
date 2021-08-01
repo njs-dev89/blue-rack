@@ -17,7 +17,7 @@ export default function BoxesStyleOne() {
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div className="box">
               <StaticImage
-                // data-aos="zoom-in"
+                data-aos="zoom-in"
                 src="../images/icons/6.png"
                 className="img-responsive img-center"
                 alt="Hosting"
@@ -35,8 +35,8 @@ export default function BoxesStyleOne() {
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div className="box">
               <StaticImage
-                // data-aos="zoom-in"
-                // data-aos-delay="100"
+                data-aos="zoom-in"
+                data-aos-delay="100"
                 src="../images/icons/7.png"
                 className="img-responsive img-center"
                 alt="Hosting"
@@ -54,8 +54,8 @@ export default function BoxesStyleOne() {
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div className="box">
               <StaticImage
-                // data-aos="zoom-in"
-                // data-aos-delay="200"
+                data-aos="zoom-in"
+                data-aos-delay="200"
                 src="../images/icons/8.png"
                 className="img-responsive img-center"
                 alt="Hosting"
@@ -73,8 +73,8 @@ export default function BoxesStyleOne() {
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div className="box">
               <StaticImage
-                // data-aos="zoom-in"
-                // data-aos-delay="300"
+                data-aos="zoom-in"
+                data-aos-delay="300"
                 src="../images/icons/4.png"
                 className="img-responsive img-center"
                 alt="Hosting"
