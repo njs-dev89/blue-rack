@@ -32,8 +32,12 @@ export default function MainNavbar() {
               <NavDropdown.Item as={Link} to="/sharedHosting">
                 Shared Hosting
               </NavDropdown.Item>
-              <NavDropdown.Item>Reseller Hosting</NavDropdown.Item>
-              <NavDropdown.Item>VPS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/resellerHosting">
+                Reseller Hosting
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/vps">
+                VPS
+              </NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Item>
