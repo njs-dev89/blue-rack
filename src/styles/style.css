@@ -2269,6 +2269,12 @@ li {
 #fade-quote-carousel.carousel .carousel-indicators {
   bottom: 0;
 }
+.carousel-indicators li {
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+}
 
 #fade-quote-carousel.carousel .carousel-indicators > li {
   background-color: #14d468;
@@ -2303,10 +2309,13 @@ li {
   height: 10px;
 }
 
-#fade-quote-carousel .profile-circle img {
+#fade-quote-carousel .profile-circle .gatsby-image-wrapper {
   width: 80px;
   height: 80px;
   margin: 0 auto 25px auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   margin-bottom: -25px;
   box-shadow: 0 10px 20px rgba(73, 61, 94, 0.3);
   border-radius: 100%;

@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Carousel } from "react-bootstrap";
 
 export default function TestimonialSlider() {
   return (
@@ -7,22 +8,15 @@ export default function TestimonialSlider() {
       <div className="custom-width">
         <div className="row">
           <div className="col-md-12">
-            <div
+            <Carousel
               className="carousel slide"
               id="fade-quote-carousel"
               data-ride="carousel"
-              data-interval="4000"
+              data-interval="80000"
+              interval={4000}
             >
-              <ol className="carousel-indicators">
-                <li
-                  data-target="#fade-quote-carousel"
-                  data-slide-to="0"
-                  className="active"
-                ></li>
-                <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="item active">
+              <Carousel.Item className="item">
+                <div className="row">
                   <div className="col-sm-4">
                     <div className="text-left">
                       <h2>What our clients are saying?</h2>
@@ -85,7 +79,9 @@ export default function TestimonialSlider() {
                     </blockquote>
                   </div>
                 </div>
-                <div className="item">
+              </Carousel.Item>
+              <Carousel.Item className="item">
+                <div className="row">
                   <div className="col-sm-4">
                     <div className="text-left">
                       <h2>What our clients are saying?</h2>
@@ -148,8 +144,8 @@ export default function TestimonialSlider() {
                     </blockquote>
                   </div>
                 </div>
-              </div>
-            </div>
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
       </div>
