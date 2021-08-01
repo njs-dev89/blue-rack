@@ -1,0 +1,39 @@
+.top-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+.top-bar.margin-for-home {
+  margin-bottom: 10px;
+}
+.top-bar a {
+  font-size: 12px;
+  margin-right: 25px;
+  border-right: 1px solid #f0f0f0;
+  padding-right: 20px;
+}
+
+.top-bar a:hover {
+  color: #14d468;
+}
+
+.top-bar a > i {
+  font-size: 11px;
+  padding: 1px 5px 0;
+}
+
+.top-bar .custom-width .right-topbar a:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.top-bar .right-topbar {
+  float: right;
+}
+
+.top-bar .left-topbar {
+  float: left;
+  position: relative;
+}
