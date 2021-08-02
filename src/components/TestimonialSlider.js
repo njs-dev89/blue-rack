@@ -12,7 +12,7 @@ export default function TestimonialSlider() {
               className="carousel slide"
               id="fade-quote-carousel"
               data-ride="carousel"
-              data-interval="80000"
+              data-interval="8000"
               interval={4000}
             >
               <Carousel.Item className="item">

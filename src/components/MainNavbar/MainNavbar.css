@@ -1,10 +1,12 @@
-nav.navbar {
+.nav-fall {
   background-color: transparent !important;
 }
 
-.navbar-raise {
-  background-color: white;
-  box-shadow: 0 0 20px rgba(73, 61, 94, 0.09);
+.nav-raise {
+  background-color: white !important;
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(73, 61, 94, 0.09) !important;
+  z-index: 20;
 }
 
 .dropdown-menu .dropdown-item.active {

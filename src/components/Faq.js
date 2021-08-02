@@ -1,4 +1,28 @@
 import React from "react";
+import AccordionItem from "./AccordionItem";
+
+const data = [
+  {
+    title: "What are some tips when choosing a hosting package?",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+  },
+  {
+    title: "How do I choose the right server?",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+  },
+  {
+    title: "What if I need help choosing the right domain?",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+  },
+  {
+    title: "How can i contact your technical team?",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+  },
+  {
+    title: "Differences between Cloud Hosting and Shared Hosting?",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+  },
+];
 
 export default function Faq() {
   return (
@@ -7,61 +31,9 @@ export default function Faq() {
         <h3>Frequently Aksed Questions</h3>
 
         <div className="accordion">
-          <div className="accordion-item" eventKey="0">
-            <a>What are some tips when choosing a hosting package?</a>
-            <div className="content" eventKey="0">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                viverra suspendisse potenti.
-              </p>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <a>How do I choose the right server?</a>
-            <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                viverra suspendisse potenti.
-              </p>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <a>What if I need help choosing the right domain?</a>
-            <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                viverra suspendisse potenti.
-              </p>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <a>How can i contact your technical team?</a>
-            <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                viverra suspendisse potenti.
-              </p>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <a>Differences between Cloud Hosting and Shared Hosting?</a>
-            <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                viverra suspendisse potenti.
-              </p>
-            </div>
-          </div>
+          {data.map(({ title, body }) => {
+            return <AccordionItem title={title} body={body} />;
+          })}
         </div>
       </div>
     </div>

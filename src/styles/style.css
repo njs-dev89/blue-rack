@@ -1651,38 +1651,47 @@ li {
 
 /* FAQ */
 
-.accordion a {
+.accordion .accordion-head {
   position: relative;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 10px 0;
   font-size: 18px;
   font-weight: 400;
+  border: none;
   border-bottom: 1px solid #e5e5e5;
 }
+.accordion-item {
+  background-color: inherit;
+  border: none;
+}
 
+.accordion-item .accordion-head a {
+  color: #9aa6ca !important;
+  text-decoration: none;
+}
+
+.accordion-item .accordion-head a.active {
+  color: #4270e4 !important;
+}
 .faq h3 {
   margin-bottom: 20px;
 }
 
-.accordion a:hover,
-.accordion a:hover::after {
+.accordion .accordion-head a:hover,
+.accordion .accordion-head a:hover::after {
   cursor: pointer;
   color: #14d468;
 }
 
-.accordion a.active {
+.accordion .accordion-head a.active {
   color: #4270e4;
 }
 
-.accordion a::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f067";
+.accordion .accordion-head .fa {
   position: absolute;
   float: right;
   right: 0;
@@ -1696,14 +1705,6 @@ li {
   -moz-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-}
-
-.accordion a.active::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00d";
-  font-weight: 900;
-  font-size: 15px;
-  color: #4270e4;
 }
 
 .accordion .content {
