@@ -11,7 +11,7 @@ export default function MainNavbar() {
     <Navbar bg="light" expand="lg" sticky="top" id="navbar">
       <Container>
         {/* <Navbar.Brand href="#home"> */}
-        <div onClick={() => navigate("/")}>
+        <div onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
           <StaticImage src="../../images/logo/logo.png" className="logo" />
         </div>
 
