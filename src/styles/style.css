@@ -2844,3 +2844,36 @@ footer .partners {
   left: 0%;
   top: 0%;
 }
+
+.custom-width2 {
+  width: 60%;
+  max-width: 800px;
+  position: relative;
+  left: 20%;
+}
+.tos {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.tos li {
+  list-style: square;
+  margin-bottom: 16px;
+}
+
+.main-title2 {
+  width: 60%;
+  max-width: 800px;
+  position: relative;
+  left: 20%;
+}
+
+.main-title2 h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #5e58aa;
+}
+
+.main-title2 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}

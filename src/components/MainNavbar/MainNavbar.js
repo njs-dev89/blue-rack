@@ -41,7 +41,7 @@ export default function MainNavbar() {
             </NavDropdown>
 
             <Nav.Item>
-              <Nav.Link href="/" className="pe-4">
+              <Nav.Link as={Link} to="/tos" className="pe-4">
                 Terms and Conditions
               </Nav.Link>
             </Nav.Item>
