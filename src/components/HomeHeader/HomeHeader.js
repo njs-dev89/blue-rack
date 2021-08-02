@@ -235,7 +235,7 @@ export default function HomeHeader() {
                     placeholder="blurred"
                     layout="fullWidth"
                     objectFit="contain"
-                    className="animated fadeInRight"
+                    className="img-container animated fadeInRight"
                     imgClassName="img-responsive"
                     alt=""
                   />
