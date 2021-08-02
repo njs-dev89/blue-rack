@@ -1,6 +1,74 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
+function SinglePrice({ price, title, storage, bandwidth }) {
+  return (
+    <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+      <div className="price">{price}$/year</div>
+      <div className="table mobile-margin-bottom">
+        <div className="table-img" data-aos="fade-up">
+          <StaticImage
+            placeholder="blurred"
+            src="../images/png-images/rocket.png"
+            className="img-center img-responsive"
+            alt="Wordpress Hosting"
+          />
+        </div>
+        <div className="table-content">
+          <h4>{title}</h4>
+          <p>Annually</p>
+          <div className="table-list">
+            <ul>
+              <li>
+                <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
+                {storage} GB NVme SSD Storage
+              </li>
+              <li>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  className="fa fa-plus"
+                ></i>
+                {bandwidth}GB USA Premium Bandwidth
+              </li>
+              <li>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                  className="fa fa-plus"
+                ></i>
+                Softaculous One Click Installer
+              </li>
+              <li>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="150"
+                  className="fa fa-times"
+                ></i>
+                Free SSL Let’s Encrypt
+              </li>
+              <li>
+                <i
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                  className="fa fa-times"
+                ></i>
+                LiteSpeed Web Server
+              </li>
+            </ul>
+          </div>
+          <div className="buttons">
+            <a href="#" className="btn btn-gray btn-medium">
+              {" "}
+              Purchase Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function PricingTable() {
   return (
     <div className="pricing-tables padding-top50 padding-bottom50">
@@ -15,568 +83,54 @@ export default function PricingTable() {
             </p>
           </div>
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price">19.99$/month</div>
-              <div className="table mobile-margin-bottom">
-                <div className="table-img" data-aos="fade-up">
-                  <StaticImage
-                    placeholder="blurred"
-                    src="../images/png-images/rocket.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Wordpress Server</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price green-bg mobile-margin-top">
-                29.99$/month
-              </div>
-              <div className="table">
-                <div
-                  className="table-img"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <StaticImage
-                    placeholder="blurred"
-                    src="../images/png-images/rocket2.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Cloud Hosting</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price price-margin-top">59.99$/month</div>
-              <div className="table">
-                <div
-                  className="table-img"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <StaticImage
-                    placeholder="blurred"
-                    src="../images/png-images/rocket3.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Dedicated Hosting</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price price-margin-top">59.99$/month</div>
-              <div className="table">
-                <div
-                  className="table-img"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <StaticImage
-                    placeholder="blurred"
-                    src="../images/png-images/rocket4.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Dedicated Hosting</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-5">
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price">19.99$/month</div>
-              <div className="table mobile-margin-bottom">
-                <div
-                  className="table-img"
-                  data-aos="fade-up"
-                  placeholder="blurred"
-                >
-                  <StaticImage
-                    src="../images/png-images/rocket.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Wordpress Server</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price green-bg mobile-margin-top">
-                29.99$/month
-              </div>
-              <div className="table">
-                <div
-                  className="table-img"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <StaticImage
-                    placeholder="blurred"
-                    src="../images/png-images/rocket2.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Cloud Hosting</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price price-margin-top">59.99$/month</div>
-              <div className="table">
-                <div
-                  className="table-img"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <StaticImage
-                    placeholder="blurred"
-                    src="../images/png-images/rocket3.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Dedicated Hosting</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div className="price price-margin-top">59.99$/month</div>
-              <div className="table">
-                <div
-                  className="table-img"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <StaticImage
-                    placeholder="blurred"
-                    src="../images/png-images/rocket4.png"
-                    className="img-center img-responsive"
-                    alt="Wordpress Hosting"
-                  />
-                </div>
-                <div className="table-content">
-                  <h4>Dedicated Hosting</h4>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted
-                  </p>
-                  <div className="table-list">
-                    <ul>
-                      <li>
-                        <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
-                        Customized Servers
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="50"
-                          className="fa fa-plus"
-                        ></i>
-                        Multi Core and Turbo Speed
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="100"
-                          className="fa fa-plus"
-                        ></i>
-                        Unlimited SDD Space
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="150"
-                          className="fa fa-times"
-                        ></i>
-                        Unlimited MySQL Databases
-                      </li>
-                      <li>
-                        <i
-                          data-aos="zoom-in"
-                          data-aos-delay="200"
-                          className="fa fa-times"
-                        ></i>
-                        Multi CPU and Ultra Speed
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="buttons">
-                    <a href="#" className="btn btn-gray btn-medium">
-                      {" "}
-                      Purchase Now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
+            <SinglePrice
+              title="SILVER PLAN"
+              price="5.88"
+              storage="1"
+              bandwidth="20"
+            />
           </div>
         </div>
       </div>
