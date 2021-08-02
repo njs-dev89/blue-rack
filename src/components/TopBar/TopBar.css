@@ -13,6 +13,7 @@
   margin-right: 25px;
   border-right: 1px solid #f0f0f0;
   padding-right: 20px;
+  text-decoration: none;
 }
 
 .top-bar a:hover {

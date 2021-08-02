@@ -2809,6 +2809,7 @@ footer .partners {
   display: inline-block;
   margin-right: 25px;
   font-size: 13px;
+  text-decoration: none;
 }
 
 .under-footer .un_img a {

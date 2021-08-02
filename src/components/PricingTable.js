@@ -20,6 +20,7 @@ export default function PricingTable() {
               <div className="table mobile-margin-bottom">
                 <div className="table-img">
                   <StaticImage
+                    placeholder="blurred"
                     data-aos="fade-up"
                     src="../images/png-images/rocket.png"
                     className="img-center img-responsive"
@@ -88,6 +89,7 @@ export default function PricingTable() {
               <div className="table">
                 <div className="table-img">
                   <StaticImage
+                    placeholder="blurred"
                     data-aos="fade-up"
                     data-aos-delay="100"
                     src="../images/png-images/rocket2.png"
@@ -155,6 +157,7 @@ export default function PricingTable() {
               <div className="table">
                 <div className="table-img">
                   <StaticImage
+                    placeholder="blurred"
                     data-aos="fade-up"
                     data-aos-delay="200"
                     src="../images/png-images/rocket3.png"
@@ -222,6 +225,7 @@ export default function PricingTable() {
               <div className="table">
                 <div className="table-img">
                   <StaticImage
+                    placeholder="blurred"
                     data-aos="fade-up"
                     data-aos-delay="300"
                     src="../images/png-images/rocket4.png"
@@ -293,6 +297,7 @@ export default function PricingTable() {
                 <div className="table-img">
                   <StaticImage
                     data-aos="fade-up"
+                    placeholder="blurred"
                     src="../images/png-images/rocket.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -360,6 +365,7 @@ export default function PricingTable() {
               <div className="table">
                 <div className="table-img">
                   <StaticImage
+                    placeholder="blurred"
                     data-aos="fade-up"
                     data-aos-delay="100"
                     src="../images/png-images/rocket2.png"
@@ -427,6 +433,7 @@ export default function PricingTable() {
               <div className="table">
                 <div className="table-img">
                   <StaticImage
+                    placeholder="blurred"
                     data-aos="fade-up"
                     data-aos-delay="200"
                     src="../images/png-images/rocket3.png"
@@ -494,6 +501,7 @@ export default function PricingTable() {
               <div className="table">
                 <div className="table-img">
                   <StaticImage
+                    placeholder="blurred"
                     data-aos="fade-up"
                     data-aos-delay="300"
                     src="../images/png-images/rocket4.png"

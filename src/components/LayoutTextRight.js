@@ -14,12 +14,6 @@ export default function LayoutTextRight() {
               alt=""
               data-aos="fade-right"
             />
-            <StaticImage
-              src="../images/png-images/world2.png"
-              class="img-absolute"
-              alt=""
-              data-aos="fade-right"
-            />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="text-container" data-aos="fadeIn-up">

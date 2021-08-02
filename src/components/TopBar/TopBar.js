@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelope, FaPhone, FaUser } from "react-icons/fa";
 import "./TopBar.css";
 export default function TopBar() {
   return (
@@ -9,17 +10,28 @@ export default function TopBar() {
         </div>
         <div className="right-topbar">
           <a className="topbar-link" href="#">
-            <i className="fa fa-envelope"></i>
+            <FaEnvelope
+              className="fa fa-envelope"
+              style={{ marginRight: "4px" }}
+            ></FaEnvelope>
             yourmeail@domain.com
           </a>
           <a className="topbar-link hidden-xs" href="#">
-            <i className="fa fa-phone"></i> +1 (23) 3356 556
+            <FaPhone
+              className="fa fa-phone"
+              style={{ marginRight: "4px" }}
+            ></FaPhone>{" "}
+            +1 (23) 3356 556
           </a>
           <a
             className="topbar-link"
             href="https://pleurat.com/bl-demo/whmcs/clientarea.php"
           >
-            <i className="fa fa-user"></i> My Account
+            <FaUser
+              className="fa fa-user"
+              style={{ marginRight: "4px" }}
+            ></FaUser>{" "}
+            My Account
           </a>
         </div>
       </div>
