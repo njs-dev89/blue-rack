@@ -2851,6 +2851,10 @@ footer .partners {
   position: relative;
   left: 20%;
 }
+
+.tos-main {
+  margin-top: 60px;
+}
 .tos {
   margin-top: 32px;
   margin-bottom: 40px;
