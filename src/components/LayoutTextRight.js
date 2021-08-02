@@ -7,12 +7,14 @@ export default function LayoutTextRight() {
     <div class="layout-text right-layout gray-layout padding-bottom50 padding-top50">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+            data-aos="fade-right"
+          >
             <StaticImage
               src="../images/png-images/laptop.png"
               class="img-responsive"
               alt=""
-              data-aos="fade-right"
             />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

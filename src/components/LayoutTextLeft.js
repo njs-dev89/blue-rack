@@ -31,14 +31,16 @@ export default function LayoutTextLeft() {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 "
+            data-aos="fade-left"
+          >
             <StaticImage
               src="../images/png-images/laptop.png"
               className="img-responsive"
               loading="lazy"
               placeholder="tracedSVG"
               alt=""
-              // data-aos="fade-right"
             />
           </div>
         </div>
