@@ -126,7 +126,8 @@ export default function HomeHeader() {
                     <StaticImage
                       src="../../images/png-images/world2.png"
                       placeholder="blurred"
-                      layout="constrained"
+                      layout="fullWidth"
+                      objectFit="contain"
                       className="img-absolute"
                       alt=""
                     />
@@ -136,7 +137,8 @@ export default function HomeHeader() {
                   <StaticImage
                     src="../../images/png-images/home-carousel.png"
                     placeholder="blurred"
-                    layout="constrained"
+                    layout="fullWidth"
+                    objectFit="contain"
                     className="img-container"
                     imgClassName="img-absolute"
                     alt=""
@@ -170,7 +172,8 @@ export default function HomeHeader() {
                     <StaticImage
                       src="../../images/png-images/world2.png"
                       placeholder="blurred"
-                      layout="constrained"
+                      objectFit="contain"
+                      layout="fullWidth"
                       className="img-absolute"
                       alt=""
                     />
@@ -180,6 +183,8 @@ export default function HomeHeader() {
                   <StaticImage
                     src="../../images/png-images/green-energy.png"
                     placeholder="blurred"
+                    layout="fullWidth"
+                    objectFit="contain"
                     className="img-container"
                     imgClassName="img-responsive animated fadeInRight"
                     alt=""
@@ -217,7 +222,8 @@ export default function HomeHeader() {
                     <StaticImage
                       src="../../images/png-images/world2.png"
                       placeholder="blurred"
-                      layout="constrained"
+                      layout="fullWidth"
+                      objectFit="contain"
                       className="img-absolute"
                       alt=""
                     />
@@ -227,7 +233,10 @@ export default function HomeHeader() {
                   <StaticImage
                     src="../../images/png-images/server2.png"
                     placeholder="blurred"
-                    className="img-responsive animated fadeInRight"
+                    layout="fullWidth"
+                    objectFit="contain"
+                    className="animated fadeInRight"
+                    imgClassName="img-responsive"
                     alt=""
                   />
                 </Col>

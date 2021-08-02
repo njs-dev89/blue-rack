@@ -9,7 +9,6 @@ export default function contact() {
   return (
     <Layout>
       <ContactPageHeader page="contact" />
-      <BoxesStyleOne />
       <ContactForm />
       <CallToActionTwo />
     </Layout>
