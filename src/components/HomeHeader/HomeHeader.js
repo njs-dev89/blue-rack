@@ -90,7 +90,7 @@ export default function HomeHeader() {
       {/* <!-- end of modal --> */}
 
       {/* <!-- Left Sidebar ends here --> */}
-      <div className="custom-width">
+      <div className="custom-width container">
         <Tab.Container defaultActiveKey="first">
           <TabContent className="tab-content">
             <TabPane
@@ -127,7 +127,6 @@ export default function HomeHeader() {
                       src="../../images/png-images/world2.png"
                       placeholder="blurred"
                       layout="constrained"
-                      objectFit="cover"
                       className="img-absolute"
                       alt=""
                     />
@@ -138,7 +137,6 @@ export default function HomeHeader() {
                     src="../../images/png-images/home-carousel.png"
                     placeholder="blurred"
                     layout="constrained"
-                    objectFit="cover"
                     className="img-container"
                     imgClassName="img-absolute"
                     alt=""
@@ -173,7 +171,6 @@ export default function HomeHeader() {
                       src="../../images/png-images/world2.png"
                       placeholder="blurred"
                       layout="constrained"
-                      objectFit="cover"
                       className="img-absolute"
                       alt=""
                     />
@@ -221,21 +218,18 @@ export default function HomeHeader() {
                       src="../../images/png-images/world2.png"
                       placeholder="blurred"
                       layout="constrained"
-                      objectFit="cover"
                       className="img-absolute"
                       alt=""
                     />
                   </div>
                 </Col>
                 <Col sm={6} className="col-sm-6">
-                  <div className="img-container">
-                    <StaticImage
-                      src="../../images/png-images/server2.png"
-                      placeholder="blurred"
-                      className="img-responsive animated fadeInRight"
-                      alt=""
-                    />
-                  </div>
+                  <StaticImage
+                    src="../../images/png-images/server2.png"
+                    placeholder="blurred"
+                    className="img-responsive animated fadeInRight"
+                    alt=""
+                  />
                 </Col>
               </Row>
             </TabPane>

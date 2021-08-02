@@ -35,14 +35,20 @@ export default function LayoutTextLeft() {
             <StaticImage
               src="../images/png-images/laptop.png"
               className="img-responsive"
+              loading="lazy"
+              placeholder="tracedSVG"
               alt=""
-              data-aos="fade-right"
+              // data-aos="fade-right"
             />
             <StaticImage
               src="../images/png-images/world2.png"
               className="img-absolute"
+              width={600}
+              loading="lazy"
+              placeholder="blurred"
+              layout="fixed"
               alt=""
-              data-aos="fade-right"
+              // data-aos="fade-right"
             />
           </div>
         </div>

@@ -1,126 +1,3 @@
-/* --------------------
- CSS TABLE OF CONTENT 
- ----------------------
-
-  Template Name: Bluerack - Powerful web hosting template with WHMCS Theme
-
-  -About Author:
-  * Author Name: Pleurat
-  * Team: ThemeKolor
-  * Author URL: http://www.themekolor.com
-  * ThemeForest author profile: https://themeforest.net/themekolor
-
---------------------------------------------------------------------
-
-    *TYPOGRAPHY
-    Main fonts:Open Sans and ;
-    Paragraph(p) and lists: Open Sans;
-    -Font Size:
-     p - 14px - 18px
-     h2,h3 - 30px - 45px
-     h4,h5 - 18px - 29px
-    -Font Weight
-     Headings: 600-800
-     P,li: 400
-
-    *Background Colors
-    Green: #14d468;
-    Blue: #4270e4; 
-
-    Font Colors:
-    p: #9aa6ca
-    h2,h3: #5e58aa
-    h3,h4: #5f5aac
-
---------------------------------- CSS Table of content  -------------------------------------
-
-**************
-BODY STYLE
-**************
-    Fonts for (p,h2,h3,h4,h5,li)
-    Colors
-    Links
-    Headings (h2,h3,h4,h5)
-    Paddings - Default Padding for all divs
-    Animations
-    Circles
-    Div with background colors
-    Forms and Inputs
-
-**************
-NAVBAR CUSTOMIZATION
-**************
-    Topbar content
-    LOGO
-    NAVBAR LINKS
-    MEGAMENU
-    Sidebar left
-    Sidebar right
-    
-**************
-PAGE HEADERS
-**************
-    Wordpress Hosting Page Header
-    Cloud Hosting Page Header
-    Shared Hosting Page Header
-    Dedicated Hosting Page Header
-    About us Page Header
-    Contact Us Page Header
-    Error 404 Page Header
-
-**************
-HOMEPAGE CAROUSEL - Slider
-**************
-   Wordpress Content
-   Cloud Content
-   Shared Hosting content
-
-**************
-TITLES
-**************
-   Main Title
-   Title centered
-   Title Left
-   Title dark and light
-
-**************
-Layouts ( section and divs )
-**************
-    Sections and divs: Domain search form
-    Sections and divs: Main Features
-    Sections and divs: Pricing TABLES
-    Sections and divs: Dual Section
-    Sections and divs: Tab Swircher
-    Sections and divs: Boxes style one
-    Sections and divs: Partners
-    Sections and divs: Features one
-    Sections and divs: Features two
-    Sections and divs: Features three
-    Sections and divs: Features four
-    Sections and divs: Features five
-    Sections and divs: Features six
-    Sections and divs: Layout text left
-    Sections and divs: Layout text right
-    Sections and divs: Features2
-    Sections and divs: Section with bg image
-    Sections and divs: Section with bg image style 2
-    Sections and divs: Boxes Style one
-    Sections and divs: Call to action
-    Sections and divs: Footer dark
-    Sections and divs: Footer light
-
-**************
-Footer
-**************
-    Footer Partners
-    Footer Links
-    Under Footer
-    Under footer two
-
-================ 
-TABLE OF CONTENT ENDS HERE:
- =================*/
-
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Overpass:100,200,300,400,600,700,800,900");
 
@@ -1306,17 +1183,20 @@ li {
   margin-top: 40px;
 }
 
-.host-feature > .pull-left {
+.host-feature .pull-left {
   width: 40px;
   height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #14d468;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 3px solid #ffffff;
   color: #ffffff;
-  margin: 0 10px 0 0;
-  text-align: center;
-  line-height: 37px;
-  font-size: 15px;
+  margin: 2px 10px 0 0;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .tabs .boxes {
@@ -1485,7 +1365,6 @@ li {
 
 .features-two .box-shadow {
   display: grid;
-  background: url(/png-images/world.png) top;
   background-size: cover;
   box-shadow: 0 0 80px rgba(35, 29, 68, 0.085);
   padding: 30px 20px 10px 30px;
@@ -2094,6 +1973,10 @@ li {
 .gray-layout {
   background: #f7f9ff;
 }
+.left-layout,
+.right-layout {
+  position: relative;
+}
 
 .right-layout .text-container {
   margin-left: 30px;
@@ -2601,6 +2484,7 @@ li {
 
 .imgs2 {
   margin-right: auto;
+  position: relative;
   margin-left: auto;
   background: url(/other/2.jpg) center left;
 }
@@ -2613,7 +2497,7 @@ li {
   width: 0;
   height: 0;
   position: absolute;
-  right: 270px;
+  left: 550px;
   top: 40%;
   content: "";
   border-style: solid;
@@ -2947,4 +2831,16 @@ footer .partners {
   font-size: 13px;
   padding: 15px 15px;
   text-align: left;
+}
+
+.left-layout .img-absolute,
+.right-layout .img-absolute {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
+.right-layout .img-absolute {
+  left: 0%;
+  top: 0%;
 }
