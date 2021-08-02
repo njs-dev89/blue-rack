@@ -8,7 +8,7 @@ import CallToActionTwo from "../components/CallToActionTwo";
 export default function contact() {
   return (
     <Layout>
-      <ContactPageHeader />
+      <ContactPageHeader page="contact" />
       <BoxesStyleOne />
       <ContactForm />
       <CallToActionTwo />

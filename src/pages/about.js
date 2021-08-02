@@ -11,7 +11,7 @@ import FeaturesStyleFour from "../components/FeaturesStyleFour";
 export default function contact() {
   return (
     <Layout>
-      <ContactPageHeader />
+      <ContactPageHeader page="about" />
       <TeamMembers />
       <SectionWithImageBg />
       <FeaturesStyleFour />
