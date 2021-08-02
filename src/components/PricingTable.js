@@ -18,10 +18,9 @@ export default function PricingTable() {
             <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
               <div className="price">19.99$/month</div>
               <div className="table mobile-margin-bottom">
-                <div className="table-img">
+                <div className="table-img" data-aos="fade-up">
                   <StaticImage
                     placeholder="blurred"
-                    data-aos="fade-up"
                     src="../images/png-images/rocket.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -87,11 +86,13 @@ export default function PricingTable() {
                 29.99$/month
               </div>
               <div className="table">
-                <div className="table-img">
+                <div
+                  className="table-img"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
                   <StaticImage
                     placeholder="blurred"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
                     src="../images/png-images/rocket2.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -155,11 +156,13 @@ export default function PricingTable() {
             <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
               <div className="price price-margin-top">59.99$/month</div>
               <div className="table">
-                <div className="table-img">
+                <div
+                  className="table-img"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <StaticImage
                     placeholder="blurred"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
                     src="../images/png-images/rocket3.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -223,11 +226,13 @@ export default function PricingTable() {
             <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
               <div className="price price-margin-top">59.99$/month</div>
               <div className="table">
-                <div className="table-img">
+                <div
+                  className="table-img"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   <StaticImage
                     placeholder="blurred"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
                     src="../images/png-images/rocket4.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -294,10 +299,12 @@ export default function PricingTable() {
             <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
               <div className="price">19.99$/month</div>
               <div className="table mobile-margin-bottom">
-                <div className="table-img">
+                <div
+                  className="table-img"
+                  data-aos="fade-up"
+                  placeholder="blurred"
+                >
                   <StaticImage
-                    data-aos="fade-up"
-                    placeholder="blurred"
                     src="../images/png-images/rocket.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -363,11 +370,13 @@ export default function PricingTable() {
                 29.99$/month
               </div>
               <div className="table">
-                <div className="table-img">
+                <div
+                  className="table-img"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
                   <StaticImage
                     placeholder="blurred"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
                     src="../images/png-images/rocket2.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -431,11 +440,13 @@ export default function PricingTable() {
             <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
               <div className="price price-margin-top">59.99$/month</div>
               <div className="table">
-                <div className="table-img">
+                <div
+                  className="table-img"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <StaticImage
                     placeholder="blurred"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
                     src="../images/png-images/rocket3.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"
@@ -499,11 +510,13 @@ export default function PricingTable() {
             <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
               <div className="price price-margin-top">59.99$/month</div>
               <div className="table">
-                <div className="table-img">
+                <div
+                  className="table-img"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   <StaticImage
                     placeholder="blurred"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
                     src="../images/png-images/rocket4.png"
                     className="img-center img-responsive"
                     alt="Wordpress Hosting"

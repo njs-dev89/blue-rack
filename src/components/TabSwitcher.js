@@ -42,7 +42,10 @@ export default function TabSwitcher() {
           <Tab.Content className="tab-content">
             <Tab.Pane id="home" eventKey="one" className="tab-pane in">
               <div className="row">
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div
+                  className="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                  data-aos="fade-right"
+                >
                   <StaticImage
                     src="../images/png-images/green-energy.png"
                     className="img-responsive animated fadeInLeft"
