@@ -1766,7 +1766,7 @@ li {
   font-weight: 500;
 }
 
-.features-four i {
+.features-four .pull-left {
   color: #14d468;
   font-size: 30px;
   margin: 5px 0 15px;
@@ -2545,7 +2545,7 @@ li {
 
 /* Section with image bg */
 .img-section {
-  /* background: url(../images/other/2.jpg) center left; */
+  background: url(/images/other/2.jpg) center left;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2553,7 +2553,7 @@ li {
 .img-section.for-about {
   margin-right: auto;
   margin-left: auto;
-  /* background: url(../images/other/3.jpeg) center left; */
+  background: url(/images/other/3.jpeg) center left;
 }
 
 .img-section .text {
@@ -2602,7 +2602,7 @@ li {
 .imgs2 {
   margin-right: auto;
   margin-left: auto;
-  /* background: url(../images/other/3.jpeg) center left; */
+  background: url(/other/2.jpg) center left;
 }
 
 .imgs2 .text {
@@ -2713,9 +2713,11 @@ li {
 
 .team .social-links {
   margin: 25px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 
-.team .social-links i {
+.team .social-links a {
   background: #ffffff;
   color: #14d468;
   border: 1px solid #f0f0f0;
@@ -2729,7 +2731,7 @@ li {
   transition: 0.1s linear;
 }
 
-.team .social-links i:hover {
+.team .social-links a:hover {
   background: #4270e4;
   color: #ffffff;
 }
