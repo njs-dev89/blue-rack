@@ -70,7 +70,7 @@ export default function ContactForm() {
                   name="message"
                   className="form-control"
                   placeholder="Message for me *"
-                  rows="4"
+                  rows="8"
                   required="required"
                   data-error="Please,leave us a message../whmcs"
                 ></textarea>
