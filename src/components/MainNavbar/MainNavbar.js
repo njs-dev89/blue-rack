@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
+import { navigate } from "gatsby";
 import "./MainNavbar.css";
 
 export default function MainNavbar() {
@@ -10,7 +11,10 @@ export default function MainNavbar() {
     <Navbar bg="light" expand="lg" sticky="top" id="navbar">
       <Container>
         {/* <Navbar.Brand href="#home"> */}
-        <StaticImage src="../../images/logo/logo.png" className="logo" />
+        <div onClick={() => navigate("/")}>
+          <StaticImage src="../../images/logo/logo.png" className="logo" />
+        </div>
+
         {/* </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           {" "}
