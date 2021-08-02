@@ -2259,14 +2259,16 @@ li {
 .contact-form .form-control {
   width: 100%;
   font-size: 13px;
-  background: inherit;
+  background: #ffffff;
   border: 0;
-  border-bottom: 1px solid rgba(202, 82, 82, 0.1);
-  border-radius: 0px;
-  box-shadow: inset 0 0 0;
-  height: 47px;
+  border-radius: 27px;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  height: 54px;
   transition: 0.3s linear;
   margin: 10px 0;
+}
+.contact-form textarea.form-control {
+  height: 120px;
 }
 
 .has-error .form-control {
@@ -2280,7 +2282,7 @@ li {
 }
 
 .form-control:focus {
-  border-bottom: 1px solid #6774e7 !important;
+  border: 1px solid #f0f0f0;
 }
 
 .textarea-contact {
