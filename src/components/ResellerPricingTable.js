@@ -7,6 +7,40 @@ import {
   FaServer,
 } from "react-icons/fa";
 
+function SinglePrice(price, storage, cp) {
+  return (
+    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div className="table-content blue-border">
+        <div className="table-circle blue-bg" data-aos="zoom-in">
+          C1
+        </div>
+        <div className="text-container">
+          <ul>
+            <li>{storage}GB NVME SSD Storage</li>
+            <li>
+              <FaExchangeAlt className="fas fa-exchange-alt"></FaExchangeAlt>
+              {cp} Control Panels
+            </li>
+            <li>WHMCS Licence (Global)</li>
+            <li>Support Via Ticket and Live Chat</li>
+            <li>Realtime Access</li>
+            <li>Unlimited Email accounts</li>
+            <li>Free Native Apps</li>
+            <li>Linux server</li>
+            <li>Licenced Softwares</li>
+          </ul>
+          <div className="price">
+            <h3>${price}/month</h3>
+          </div>
+          <a href="#" className="btn btn-large btn-outline outline-dark">
+            Request a free quote
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function ResellerPricingTable() {
   return (
     <div className="pricing-tables-light padding-top50 padding-bottom50">
@@ -19,122 +53,9 @@ export default function ResellerPricingTable() {
           </p>
         </div>
         <div className="row">
-          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div className="table-content blue-border">
-              <div className="table-circle blue-bg" data-aos="zoom-in">
-                C1
-              </div>
-              <div className="text-container">
-                <ul>
-                  <li>
-                    <FaMicrochip className="fas fa-microchip"></FaMicrochip>2.4
-                    GHz Xenon Processor
-                  </li>
-                  <li>
-                    <FaExchangeAlt className="fas fa-exchange-alt"></FaExchangeAlt>
-                    10TB Premium Bandwidth
-                  </li>
-                  <li>
-                    <FaHdd className="fas fa-hdd"></FaHdd>Unlimited SSD Space
-                  </li>
-                  <li>
-                    <FaCode className="fas fa-code"></FaCode>Full Root Admin
-                    Access
-                  </li>
-                  <li>
-                    <FaServer className="fas fa-server"></FaServer>Powerful
-                    Datacenter Infrastructure
-                  </li>
-                </ul>
-                <div className="price">
-                  <h3>$39.99/month</h3>
-                </div>
-                <a href="#" className="btn btn-large btn-outline outline-dark">
-                  Request a free quote
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div className="table-content ">
-              <div
-                className="table-circle"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                C2
-              </div>
-              <div className="text-container">
-                <ul>
-                  <li>
-                    <FaMicrochip className="fas fa-microchip"></FaMicrochip>2.4
-                    GHz Xenon Processor
-                  </li>
-                  <li>
-                    <FaExchangeAlt className="fas fa-exchange-alt"></FaExchangeAlt>
-                    10TB Premium Bandwidth
-                  </li>
-                  <li>
-                    <FaHdd className="fas fa-hdd"></FaHdd>Unlimited SSD Space
-                  </li>
-                  <li>
-                    <FaCode className="fas fa-code"></FaCode>Full Root Admin
-                    Access
-                  </li>
-                  <li>
-                    <FaServer className="fas fa-server"></FaServer>Powerful
-                    Datacenter Infrastructure
-                  </li>
-                </ul>
-                <div className="price">
-                  <h3>$79.99/month</h3>
-                </div>
-                <a href="#" className="btn btn-large btn-outline outline-dark">
-                  Request a free quote
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div className="table-content blue-border">
-              <div
-                className="table-circle blue-bg"
-                data-aos="zoom-in"
-                data-aos-delay="200"
-              >
-                C3
-              </div>
-              <div className="text-container">
-                <ul>
-                  <li>
-                    <FaMicrochip className="fas fa-microchip"></FaMicrochip>2.4
-                    GHz Xenon Processor
-                  </li>
-                  <li>
-                    <FaExchangeAlt className="fas fa-exchange-alt"></FaExchangeAlt>
-                    10TB Premium Bandwidth
-                  </li>
-                  <li>
-                    <FaHdd className="fas fa-hdd"></FaHdd>Unlimited SSD Space
-                  </li>
-                  <li>
-                    <FaCode className="fas fa-code"></FaCode>Full Root Admin
-                    Access
-                  </li>
-                  <li>
-                    <FaServer className="fas fa-server"></FaServer>Powerful
-                    Datacenter Infrastructure
-                  </li>
-                </ul>
-                <div className="price">
-                  <h3>$99.99/month</h3>
-                </div>
-                <a href="#" className="btn btn-large btn-outline outline-dark">
-                  Request a free quote
-                </a>
-              </div>
-            </div>
-          </div>
+          <SinglePrice price="30" storage="200" cp="50" />
+          <SinglePrice price="42" storage="400" cp="200" />
+          <SinglePrice price="48" storage="500" cp="300" />
         </div>
       </div>
     </div>
