@@ -3,7 +3,7 @@ import React from "react";
 
 function SinglePrice({ price, title, storage, bandwidth }) {
   return (
-    <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+    <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
       <div className="price">{price}$/year</div>
       <div className="table mobile-margin-bottom">
         <div className="table-img" data-aos="fade-up">
@@ -89,47 +89,48 @@ export default function PricingTable() {
               storage="1"
               bandwidth="20"
             />
+
             <SinglePrice
-              title="SILVER PLAN"
-              price="5.88"
-              storage="1"
-              bandwidth="20"
+              title="GOLD PLAN"
+              price="18.00"
+              storage="2"
+              bandwidth="30"
             />
             <SinglePrice
-              title="SILVER PLAN"
-              price="5.88"
-              storage="1"
-              bandwidth="20"
+              title="DIAMOND PLAN"
+              price="35.88"
+              storage="5"
+              bandwidth="60"
             />
             <SinglePrice
-              title="SILVER PLAN"
-              price="5.88"
-              storage="1"
-              bandwidth="20"
+              title="PLATINUM PLAN"
+              price="59.88"
+              storage="10"
+              bandwidth="90"
             />
             <SinglePrice
-              title="SILVER PLAN"
-              price="5.88"
-              storage="1"
-              bandwidth="20"
+              title="RHODIUM PLAN"
+              price="100"
+              storage="20"
+              bandwidth="130"
             />
             <SinglePrice
-              title="SILVER PLAN"
-              price="5.88"
-              storage="1"
-              bandwidth="20"
+              title="TITANIUM PLAN"
+              price="170"
+              storage="30"
+              bandwidth="180"
             />
             <SinglePrice
-              title="SILVER PLAN"
-              price="5.88"
-              storage="1"
-              bandwidth="20"
+              title="SPECIAL PLAN"
+              price="288"
+              storage="50"
+              bandwidth="200"
             />
             <SinglePrice
-              title="SILVER PLAN"
-              price="5.88"
-              storage="1"
-              bandwidth="20"
+              title="VIP PLAN"
+              price="1130"
+              storage="200"
+              bandwidth="1000"
             />
           </div>
         </div>
