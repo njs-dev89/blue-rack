@@ -16,35 +16,6 @@ export default function UnderFooter() {
                 <a href="#">Privacy Policy</a>
               </div>
             </div>
-            <div className="col-sm-4 un_img">
-              <div className="col-sm-4">
-                <a href="#">
-                  <img
-                    src="images/other/footer-img1.png"
-                    className="img-responsive"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div className="col-sm-4">
-                <a href="#">
-                  <img
-                    src="images/other/footer-img2.png"
-                    className="img-responsive"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div className="col-sm-4">
-                <a href="#">
-                  <img
-                    src="images/other/footer-img3.png"
-                    className="img-responsive"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

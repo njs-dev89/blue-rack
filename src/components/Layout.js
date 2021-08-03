@@ -14,14 +14,12 @@ export default function Layout({ children }) {
     const AOS = require("aos");
     AOS.init();
     if (typeof window !== undefined) {
-      console.log(document);
       const navbar = document.querySelector("#navbar");
       console.log(navbar);
       const topBarHeight = document.querySelector("#top-bar").scrollHeight;
-      console.log(topBarHeight);
+
       navbar.classList.add("nav-fall");
       window.addEventListener("scroll", () => {
-        console.log(window.scrollY);
         if (window.scrollY >= topBarHeight) {
           navbar.classList.add("nav-raise");
         } else {
