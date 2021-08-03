@@ -1,5 +1,4 @@
 import React from "react";
-import BoxesStyleOne from "../components/BoxesStyleOne";
 import TestimonialSlider from "../components/TestimonialSlider";
 import ContactPageHeader from "../components/ContactPageHeader";
 import Layout from "../components/Layout";

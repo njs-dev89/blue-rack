@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  FaCode,
-  FaExchangeAlt,
-  FaHdd,
-  FaMicrochip,
-  FaServer,
-} from "react-icons/fa";
 
 export default function ResellerPricingTable() {
   return (

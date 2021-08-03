@@ -1,5 +1,4 @@
 import React from "react";
-import BoxesStyleOne from "../components/BoxesStyleOne";
 import ContactForm from "../components/ContactForm";
 import ContactPageHeader from "../components/ContactPageHeader";
 import Layout from "../components/Layout";

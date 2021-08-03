@@ -10,12 +10,9 @@ export default function MainNavbar() {
   return (
     <Navbar bg="light" expand="lg" sticky="top" id="navbar">
       <Container>
-        {/* <Navbar.Brand href="#home"> */}
         <div onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
           <StaticImage src="../../images/logo/logo.png" className="logo" />
         </div>
-
-        {/* </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           {" "}
           <FaBars />
@@ -23,7 +20,7 @@ export default function MainNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav" style={{ flexGrow: 0 }}>
           <Nav className="me-auto ms-auto me-0">
             <Nav.Item>
-              <Nav.Link href="#" className="px-4" as={Link} to="/">
+              <Nav.Link className="px-4" as={Link} to="/">
                 Home
               </Nav.Link>
             </Nav.Item>
@@ -33,10 +30,10 @@ export default function MainNavbar() {
               as="li"
               title="Hosting"
             >
-              <NavDropdown.Item as={Link} to="/sharedHosting">
+              <NavDropdown.Item as={Link} to="/sharedhosting">
                 Shared Hosting
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/resellerHosting">
+              <NavDropdown.Item as={Link} to="/resellerhosting">
                 Reseller Hosting
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/vps">

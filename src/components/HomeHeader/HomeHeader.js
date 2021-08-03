@@ -1,11 +1,8 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import {
-  FaComments,
-  FaEnvelopeOpen,
   FaFacebookF,
   FaInstagram,
-  FaLinkedin,
   FaLinkedinIn,
   FaPhone,
   FaRegComments,
@@ -13,14 +10,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import "./HomeHeader.css";
-import {
-  Col,
-  Nav,
-  Row,
-  TabContainer,
-  TabContent,
-  TabPane,
-} from "react-bootstrap";
+import { Col, Nav, Row, TabContent, TabPane } from "react-bootstrap";
 import { Tab } from "react-bootstrap";
 
 export default function HomeHeader() {
