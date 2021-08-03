@@ -4,7 +4,7 @@ export default function ContactPageHeader({ page }) {
   return (
     <div
       className={`default-header ${
-        page === "contact-page" ? "contact-page" : "about-page"
+        page === "contact" ? "contact-page" : "about-page"
       }`}
     >
       <div className="custom-width">

@@ -5,7 +5,7 @@ export default function HostingPageHeader({ page }) {
     <div
       className={`default-header ${
         page === "reseller"
-          ? "reseller"
+          ? "reseller-page"
           : page === "shared"
           ? "shared-page"
           : "vps-page"
