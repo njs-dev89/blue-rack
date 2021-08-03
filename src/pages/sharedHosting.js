@@ -11,7 +11,7 @@ import CallToAction from "../components/CallToAction";
 export default function HomePage() {
   return (
     <Layout>
-      <HostingPageHeader />
+      <HostingPageHeader page="shared" />
       <PricingTable />
       <SharedLayoutRight />
       <FeaturesStyleThree />

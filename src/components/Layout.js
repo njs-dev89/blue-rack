@@ -15,9 +15,7 @@ export default function Layout({ children }) {
     AOS.init();
     if (typeof window !== undefined) {
       const navbar = document.querySelector("#navbar");
-      console.log(navbar);
       const topBarHeight = document.querySelector("#top-bar").scrollHeight;
-
       navbar.classList.add("nav-fall");
       window.addEventListener("scroll", () => {
         if (window.scrollY >= topBarHeight) {

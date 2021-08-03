@@ -11,7 +11,7 @@ import ResellerPricingTable from "../components/ResellerPricingTable";
 export default function resellerHosting() {
   return (
     <Layout>
-      <HostingPageHeader />
+      <HostingPageHeader page="reseller" />
       <ResellerPricingTable />
       <ColorfulSection />
       <LayoutTextLeft />

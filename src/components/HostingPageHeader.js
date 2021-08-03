@@ -1,8 +1,16 @@
 import React from "react";
 
-export default function HostingPageHeader() {
+export default function HostingPageHeader({ page }) {
   return (
-    <div className="default-header shared-page">
+    <div
+      className={`default-header ${
+        page === "reseller"
+          ? "reseller"
+          : page === "shared"
+          ? "shared-page"
+          : "vps-page"
+      }`}
+    >
       <div className="custom-width">
         <div className="row">
           <div className="col-sm-7">

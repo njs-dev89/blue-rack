@@ -1819,6 +1819,26 @@ li {
     url(/headers/shared.jpeg) center;
 }
 
+.default-header.reseller-page {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 0%,
+      transparent 80%,
+      transparent 100%
+    ),
+    url(/headers/reseller.jpeg) center;
+}
+
+.default-header.vps-page {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 0%,
+      transparent 80%,
+      transparent 100%
+    ),
+    url(/headers/vps.jpeg) center;
+}
+
 .default-header.about-page {
   background: linear-gradient(
       to right,
