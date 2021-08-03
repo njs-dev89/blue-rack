@@ -2,7 +2,11 @@ import React from "react";
 
 export default function ContactPageHeader({ page }) {
   return (
-    <div className="default-header contact-page">
+    <div
+      className={`default-header ${
+        page === "contact-page" ? "contact-page" : "about-page"
+      }`}
+    >
       <div className="custom-width">
         <div className="row">
           <div className="col-sm-7">
