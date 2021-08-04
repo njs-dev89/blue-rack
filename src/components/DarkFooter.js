@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import {
   FaAngleRight,
@@ -18,53 +19,53 @@ export default function DarkFooter() {
             <h4>Hosting Services</h4>
             <ul>
               <li>
-                <a href="#">
+                <Link to="/">
                   {" "}
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Wordpress Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Dedicated Servers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Virtual Privat Server
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Cloud Computing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Magento Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Prestashop Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Baremetal Servers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   SSD Servers
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,53 +73,53 @@ export default function DarkFooter() {
             <h4>Hosting Services</h4>
             <ul>
               <li>
-                <a href="#">
+                <Link to="/">
                   {" "}
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Wordpress Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Dedicated Servers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Virtual Privat Server
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Cloud Computing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Magento Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Prestashop Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Baremetal Servers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   SSD Servers
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -126,34 +127,34 @@ export default function DarkFooter() {
             <h4>Main Services</h4>
             <ul>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Domain Reseller
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Reseller Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Cloud Servers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Bandwidth and Space
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Website Migration
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -161,40 +162,40 @@ export default function DarkFooter() {
             <h4>Other Services</h4>
             <ul>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Wordpress Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Dedicated Servers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Virtual Privat Server
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Cloud Computing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Magento Hosting
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <FaAngleRight style={{ color: "#14d468" }} />
                   Prestashop Hosting
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -216,29 +217,29 @@ export default function DarkFooter() {
           <div className="col-sm-2">
             <h4>Social Media</h4>
             <div className="social-media">
-              <a href="#">
+              <Link to="/">
                 <span>
                   <FaFacebookF className="fab fa-facebook-f"></FaFacebookF>
                 </span>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/">
                 {" "}
                 <span>
                   <FaGoogle className="fab fa-google"></FaGoogle>
                 </span>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/">
                 {" "}
                 <span>
                   <FaLinkedinIn className="fab fa-linkedin-in"></FaLinkedinIn>
                 </span>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="/">
                 {" "}
                 <span>
                   <FaInstagram className="fab fa-instagram"></FaInstagram>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-sm-12">
@@ -248,40 +249,40 @@ export default function DarkFooter() {
               </div>
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="/">
                     <FaAngleRight style={{ color: "#14d468" }} />
                     Wordpress Hosting
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/">
                     <FaAngleRight style={{ color: "#14d468" }} />
                     Dedicated Servers
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/">
                     <FaAngleRight style={{ color: "#14d468" }} />
                     Virtual Privat Server
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/">
                     <FaAngleRight style={{ color: "#14d468" }} />
                     Cloud Computing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/">
                     <FaAngleRight style={{ color: "#14d468" }} />
                     Magento Hosting
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/">
                     <FaAngleRight style={{ color: "#14d468" }} />
                     Prestashop Hosting
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

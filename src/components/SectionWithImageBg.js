@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 export default function SectionWithImageBg() {
   return (
@@ -14,10 +15,10 @@ export default function SectionWithImageBg() {
               a reader will be distracted by the readable that a reader will be
               distrac
             </p>
-            <a href="#" className="btn btn-outline btn-medium">
+            <Link to="/" className="btn btn-outline btn-medium">
               {" "}
-              Contact us now <i className="fas fa-long-arrow-alt-right"></i>
-            </a>
+              Contact us now
+            </Link>
           </div>
         </div>
       </div>

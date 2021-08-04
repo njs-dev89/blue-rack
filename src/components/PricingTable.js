@@ -1,7 +1,8 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Link } from "gatsby";
 
-function SinglePrice({ price, title, storage, bandwidth }) {
+function SinglePrice({ price, title, storage, bandwidth, link }) {
   return (
     <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
       <div className="price">{price}$/year</div>
@@ -20,48 +21,20 @@ function SinglePrice({ price, title, storage, bandwidth }) {
           <div className="table-list">
             <ul>
               <li>
-                <i data-aos="zoom-in" className="fa fa-plus"></i> Fully
+                Fully
                 {storage} GB NVme SSD Storage
               </li>
-              <li>
-                <i
-                  data-aos="zoom-in"
-                  data-aos-delay="50"
-                  className="fa fa-plus"
-                ></i>
-                {bandwidth}GB USA Premium Bandwidth
-              </li>
-              <li>
-                <i
-                  data-aos="zoom-in"
-                  data-aos-delay="100"
-                  className="fa fa-plus"
-                ></i>
-                Softaculous One Click Installer
-              </li>
-              <li>
-                <i
-                  data-aos="zoom-in"
-                  data-aos-delay="150"
-                  className="fa fa-times"
-                ></i>
-                Free SSL Let’s Encrypt
-              </li>
-              <li>
-                <i
-                  data-aos="zoom-in"
-                  data-aos-delay="200"
-                  className="fa fa-times"
-                ></i>
-                LiteSpeed Web Server
-              </li>
+              <li>{bandwidth}GB USA Premium Bandwidth</li>
+              <li>Softaculous One Click Installer</li>
+              <li>Free SSL Let’s Encrypt</li>
+              <li>LiteSpeed Web Server</li>
             </ul>
           </div>
           <div className="buttons">
-            <a href="#" className="btn btn-gray btn-medium">
+            <Link to={link} className="btn btn-gray btn-medium">
               {" "}
               Purchase Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -88,6 +61,7 @@ export default function PricingTable() {
               price="5.88"
               storage="1"
               bandwidth="20"
+              link="/"
             />
 
             <SinglePrice
@@ -95,42 +69,49 @@ export default function PricingTable() {
               price="18.00"
               storage="2"
               bandwidth="30"
+              link="/"
             />
             <SinglePrice
               title="DIAMOND PLAN"
               price="35.88"
               storage="5"
               bandwidth="60"
+              link="/"
             />
             <SinglePrice
               title="PLATINUM PLAN"
               price="59.88"
               storage="10"
               bandwidth="90"
+              link="/"
             />
             <SinglePrice
               title="RHODIUM PLAN"
               price="100"
               storage="20"
               bandwidth="130"
+              link="/"
             />
             <SinglePrice
               title="TITANIUM PLAN"
               price="170"
               storage="30"
               bandwidth="180"
+              link="/"
             />
             <SinglePrice
               title="SPECIAL PLAN"
               price="288"
               storage="50"
               bandwidth="200"
+              link="/"
             />
             <SinglePrice
               title="VIP PLAN"
               price="1130"
               storage="200"
               bandwidth="1000"
+              link="/"
             />
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import { FaHdd, FaMicrochip, FaServer } from "react-icons/fa";
 
@@ -26,9 +27,9 @@ export default function ColorfulBoxes() {
                 but the majority have suffered alteration in some for have suffe
               </p>
               <div className="buttons">
-                <a href="#" className="btn btn-outline btn-medium">
+                <Link to="/" className="btn btn-outline btn-medium">
                   Get more information
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -44,9 +45,9 @@ export default function ColorfulBoxes() {
                 but the majority have suffered alteration in some for have suffe
               </p>
               <div className="buttons">
-                <a href="#" className="btn btn-outline btn-medium">
+                <Link to="/" className="btn btn-outline btn-medium">
                   Get more information
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -62,9 +63,9 @@ export default function ColorfulBoxes() {
                 but the majority have suffered alteration in some for have suffe
               </p>
               <div className="buttons">
-                <a href="#" className="btn btn-outline btn-medium">
+                <Link to="/" className="btn btn-outline btn-medium">
                   Get more information
-                </a>
+                </Link>
               </div>
             </div>
           </div>

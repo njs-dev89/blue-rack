@@ -7,6 +7,44 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
+function SingleMember({
+  children,
+  name,
+  designation,
+  description,
+  fbLink,
+  gLink,
+  instaLink,
+  inLink,
+}) {
+  return (
+    <div className="col-sm-3">
+      <div className="members">
+        {children}
+        <div className="member-text">
+          <h4>{name}</h4>
+          <h5>{designation}</h5>
+          <p>{description}</p>
+          <div className="social-links">
+            <a href={fbLink}>
+              <FaFacebookF className="fab fa-facebook-f"></FaFacebookF>
+            </a>
+            <a href={gLink}>
+              <FaGoogle className="fab fa-google"></FaGoogle>
+            </a>
+            <a href={inLink}>
+              <FaLinkedinIn className="fab fa-linkedin-in"></FaLinkedinIn>
+            </a>
+            <a href={instaLink}>
+              <FaInstagram className="fab fa-instagram"></FaInstagram>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function TeamMembers() {
   return (
     <div className="team padding-bottom50 padding-top50">
@@ -19,130 +57,77 @@ export default function TeamMembers() {
           </p>
         </div>
         <div className="row">
-          <div className="col-sm-3">
-            <div className="members">
-              <StaticImage
-                src="../images/about/1.jpg"
-                className="img-responsive img-center"
-                alt=""
-              />
-              <div className="member-text">
-                <h4>Sonny Clark</h4>
-                <h5>General Manager</h5>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error iste natus
-                  unde omnis iste natus error is undo emis.
-                </p>
-                <div className="social-links">
-                  <a href="#">
-                    <FaFacebookF className="fab fa-facebook-f"></FaFacebookF>
-                  </a>
-                  <a href="#">
-                    <FaGoogle className="fab fa-google"></FaGoogle>
-                  </a>
-                  <a href="#">
-                    <FaLinkedinIn className="fab fa-linkedin-in"></FaLinkedinIn>
-                  </a>
-                  <a href="#">
-                    <FaInstagram className="fab fa-instagram"></FaInstagram>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-3">
-            <div className="members">
-              <StaticImage
-                src="../images/about/2.jpg"
-                className="img-responsive img-center"
-                alt=""
-              />
-              <div className="member-text">
-                <h4>John Mark</h4>
-                <h5>General Manager</h5>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error iste natus
-                  unde omnis iste natus error is undo emis.
-                </p>
-                <div className="social-links">
-                  <a href="#">
-                    <FaFacebookF className="fab fa-facebook-f"></FaFacebookF>
-                  </a>
-                  <a href="#">
-                    <FaGoogle className="fab fa-google"></FaGoogle>
-                  </a>
-                  <a href="#">
-                    <FaLinkedinIn className="fab fa-linkedin-in"></FaLinkedinIn>
-                  </a>
-                  <a href="#">
-                    <FaInstagram className="fab fa-instagram"></FaInstagram>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-3">
-            <div className="members">
-              <StaticImage
-                src="../images/about/3.jpg"
-                className="img-responsive img-center"
-                alt=""
-              />
-              <div className="member-text">
-                <h4>Claudio Suro</h4>
-                <h5>General Manager</h5>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error iste natus
-                  unde omnis iste natus error is undo emis.
-                </p>
-                <div className="social-links">
-                  <a href="#">
-                    <FaFacebookF className="fab fa-facebook-f"></FaFacebookF>
-                  </a>
-                  <a href="#">
-                    <FaGoogle className="fab fa-google"></FaGoogle>
-                  </a>
-                  <a href="#">
-                    <FaLinkedinIn className="fab fa-linkedin-in"></FaLinkedinIn>
-                  </a>
-                  <a href="#">
-                    <FaInstagram className="fab fa-instagram"></FaInstagram>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-3">
-            <div className="members">
-              <StaticImage
-                src="../images/about/4.jpg"
-                className="img-responsive img-center"
-                alt=""
-              />
-              <div className="member-text">
-                <h4>James Frank</h4>
-                <h5>General Manager</h5>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error iste natus
-                  unde omnis iste natus error is undo emis.
-                </p>
-                <div className="social-links">
-                  <a href="#">
-                    <FaFacebookF className="fab fa-facebook-f"></FaFacebookF>
-                  </a>
-                  <a href="#">
-                    <FaGoogle className="fab fa-google"></FaGoogle>
-                  </a>
-                  <a href="#">
-                    <FaLinkedinIn className="fab fa-linkedin-in"></FaLinkedinIn>
-                  </a>
-                  <a href="#">
-                    <FaInstagram className="fab fa-instagram"></FaInstagram>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <SingleMember
+            name="Sonny Clark"
+            designation="General Manager"
+            description="Sed ut perspiciatis unde omnis iste natus error iste natus
+          unde omnis iste natus error is undo emis."
+            fbLink="/"
+            gLink="/"
+            inLink="/"
+            instaLink="/"
+          >
+            <StaticImage
+              src="../images/about/1.jpg"
+              placeholder="blurred"
+              className="img-responsive img-center"
+              alt=""
+            />
+          </SingleMember>
+
+          <SingleMember
+            name="Sonny Clark"
+            designation="General Manager"
+            description="Sed ut perspiciatis unde omnis iste natus error iste natus
+          unde omnis iste natus error is undo emis."
+            fbLink="/"
+            gLink="/"
+            inLink="/"
+            instaLink="/"
+          >
+            <StaticImage
+              src="../images/about/2.jpg"
+              placeholder="blurred"
+              className="img-responsive img-center"
+              alt=""
+            />
+          </SingleMember>
+
+          <SingleMember
+            name="Sonny Clark"
+            designation="General Manager"
+            description="Sed ut perspiciatis unde omnis iste natus error iste natus
+          unde omnis iste natus error is undo emis."
+            fbLink="/"
+            gLink="/"
+            inLink="/"
+            instaLink="/"
+          >
+            <StaticImage
+              src="../images/about/3.jpg"
+              placeholder="blurred"
+              className="img-responsive img-center"
+              alt=""
+            />
+          </SingleMember>
+
+          <SingleMember
+            name="Sonny Clark"
+            designation="General Manager"
+            description="Sed ut perspiciatis unde omnis iste natus error iste natus
+          unde omnis iste natus error is undo emis."
+            fbLink="/"
+            gLink="/"
+            inLink="/"
+            instaLink="/"
+          >
+            <StaticImage
+              src="../images/about/4.jpg"
+              placeholder="blurred"
+              className="img-responsive img-center"
+              alt=""
+            />
+          </SingleMember>
         </div>
       </div>
     </div>

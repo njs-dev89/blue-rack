@@ -1,6 +1,41 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { Link } from "gatsby";
+
+function SlideLeft({ title, description, link }) {
+  return (
+    <div className="col-sm-4">
+      <div className="text-left">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <div className="buttons">
+          <Link to={link} className="btn btn-small btn-outline outline-dark">
+            Check out all reviews
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SlideTestimonial({ children, testimonial, site }) {
+  return (
+    <div className="col-sm-4">
+      <div className="profile-circle">{children}</div>
+      <blockquote>
+        <p>
+          <FaQuoteLeft className="fa quote fa-quote-right fa-sm pull-left"></FaQuoteLeft>
+          <br />
+          {testimonial}
+          <FaQuoteRight className="fa quote fa-quote-right fa-sm"></FaQuoteRight>
+        </p>
+        <small>{site}</small>
+      </blockquote>
+    </div>
+  );
+}
 
 export default function TestimonialSlider() {
   return (
@@ -17,132 +52,80 @@ export default function TestimonialSlider() {
             >
               <Carousel.Item className="item">
                 <div className="row">
-                  <div className="col-sm-4">
-                    <div className="text-left">
-                      <h2>What our clients are saying?</h2>
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout.
-                      </p>
-                      <div className="buttons">
-                        <a
-                          href="#"
-                          className="btn btn-small btn-outline outline-dark"
-                        >
-                          Check out all reviews
-                          <i className="fas fa-long-arrow-alt-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="profile-circle">
-                      <StaticImage
-                        src="../images/other/testimonial1.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </div>
-                    <blockquote>
-                      <p>
-                        <i className="fa quote fa-quote-right fa-sm pull-left"></i>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quidem, veritatis nulla eum laudantium totam
-                        tempore optio doloremque laboriosam quas, quos eaque
-                        molestias.
-                        <i className="fa quote fa-quote-right fa-sm"></i>
-                      </p>
-                      <small>www.domainname.com</small>
-                    </blockquote>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="profile-circle">
-                      <StaticImage
-                        src="../images/other/testimonial2.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </div>
-                    <blockquote>
-                      <p>
-                        <i className="fa quote fa-quote-right fa-sm pull-left"></i>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quidem, veritatis nulla eum laudantium totam
-                        tempore optio doloremque laboriosam quas, quos eaque
-                        molestias.
-                        <i className="fa quote fa-quote-right fa-sm"></i>
-                      </p>
-                      <small>www.domainname.com</small>
-                    </blockquote>
-                  </div>
+                  <SlideLeft
+                    title="What our clients are saying?"
+                    description="It is a long established fact that a reader will be
+                distracted by the readable content of a page when
+                looking at its layout."
+                    link="/"
+                  />
+                  <SlideTestimonial
+                    testimonial="Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Quidem, veritatis nulla eum laudantium totam
+                tempore optio doloremque laboriosam quas, quos eaque
+                molestias."
+                    site="www.demo.com"
+                  >
+                    <StaticImage
+                      src="../images/other/testimonial1.jpg"
+                      placeholder="blur"
+                      className="img-responsive"
+                      alt=""
+                    />
+                  </SlideTestimonial>
+
+                  <SlideTestimonial
+                    testimonial="Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Quidem, veritatis nulla eum laudantium totam
+                tempore optio doloremque laboriosam quas, quos eaque
+                molestias."
+                    site="www.demo.com"
+                  >
+                    <StaticImage
+                      src="../images/other/testimonial2.jpg"
+                      className="img-responsive"
+                      alt=""
+                    />
+                  </SlideTestimonial>
                 </div>
               </Carousel.Item>
+
               <Carousel.Item className="item">
                 <div className="row">
-                  <div className="col-sm-4">
-                    <div className="text-left">
-                      <h2>What our clients are saying?</h2>
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout.
-                      </p>
-                      <div className="buttons">
-                        <a
-                          href="#"
-                          className="btn btn-small btn-outline outline-dark"
-                        >
-                          Check out all reviews
-                          <i className="fas fa-long-arrow-alt-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="profile-circle">
-                      <StaticImage
-                        src="../images/other/testimonial1.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </div>
-                    <blockquote>
-                      <p>
-                        <i className="fa quote fa-quote-right fa-sm pull-left"></i>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quidem, veritatis nulla eum laudantium totam
-                        tempore optio doloremque laboriosam quas, quos eaque
-                        molestias.
-                        <i className="fa quote fa-quote-right fa-sm"></i>
-                      </p>
-                      <small>www.domainname.com</small>
-                    </blockquote>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="profile-circle">
-                      <StaticImage
-                        src="../images/other/testimonial2.jpg"
-                        className="img-responsive"
-                        alt=""
-                      />
-                    </div>
-                    <blockquote>
-                      <p>
-                        <i className="fa quote fa-quote-right fa-sm pull-left"></i>
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quidem, veritatis nulla eum laudantium totam
-                        tempore optio doloremque laboriosam quas, quos eaque
-                        molestias.
-                        <i className="fa quote fa-quote-right fa-sm"></i>
-                      </p>
-                      <small>www.domainname.com</small>
-                    </blockquote>
-                  </div>
+                  <SlideLeft
+                    title="What our clients are saying?"
+                    description="It is a long established fact that a reader will be
+                distracted by the readable content of a page when
+                looking at its layout."
+                    link="/"
+                  />
+                  <SlideTestimonial
+                    testimonial="Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Quidem, veritatis nulla eum laudantium totam
+                tempore optio doloremque laboriosam quas, quos eaque
+                molestias."
+                    site="www.demo.com"
+                  >
+                    <StaticImage
+                      src="../images/other/testimonial1.jpg"
+                      className="img-responsive"
+                      alt=""
+                    />
+                  </SlideTestimonial>
+
+                  <SlideTestimonial
+                    testimonial="Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Quidem, veritatis nulla eum laudantium totam
+                tempore optio doloremque laboriosam quas, quos eaque
+                molestias."
+                    site="www.demo.com"
+                  >
+                    <StaticImage
+                      src="../images/other/testimonial2.jpg"
+                      className="img-responsive"
+                      alt=""
+                    />
+                  </SlideTestimonial>
                 </div>
               </Carousel.Item>
             </Carousel>

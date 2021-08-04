@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import {
   FaComments,
@@ -162,9 +163,9 @@ export default function FeaturesStyleThree() {
           </div>
         </div>
         <div className="buttons">
-          <a href="#" className="btn btn-outline outline-dark btn-large">
+          <Link to="/" className="btn btn-outline outline-dark btn-large">
             Get more information <i className="fas fa-long-arrow-alt-right"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

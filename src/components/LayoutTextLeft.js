@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
@@ -26,9 +27,9 @@ export default function LayoutTextLeft() {
               </div>
             </div>
             <div className="buttons">
-              <a href="#" className="btn btn-small btn-green">
-                Read More <i className="fas fa-long-arrow-alt-right"></i>
-              </a>
+              <Link to="/" className="btn btn-small btn-green">
+                Read More
+              </Link>
             </div>
           </div>
           <div

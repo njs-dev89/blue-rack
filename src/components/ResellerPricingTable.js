@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 export default function ResellerPricingTable() {
   return (
@@ -32,9 +33,9 @@ export default function ResellerPricingTable() {
                 <div className="price">
                   <h3>$30/month</h3>
                 </div>
-                <a href="#" className="btn btn-large btn-outline outline-dark">
+                <Link to="/" className="btn btn-large btn-outline outline-dark">
                   Request a free quote
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -62,9 +63,9 @@ export default function ResellerPricingTable() {
                 <div className="price">
                   <h3>$42/month</h3>
                 </div>
-                <a href="#" className="btn btn-large btn-outline outline-dark">
+                <Link to="/" className="btn btn-large btn-outline outline-dark">
                   Request a free quote
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -92,9 +93,9 @@ export default function ResellerPricingTable() {
                 <div className="price">
                   <h3>$48/month</h3>
                 </div>
-                <a href="#" className="btn btn-large btn-outline outline-dark">
+                <Link to="/" className="btn btn-large btn-outline outline-dark">
                   Request a free quote
-                </a>
+                </Link>
               </div>
             </div>
           </div>

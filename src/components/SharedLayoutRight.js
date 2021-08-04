@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { FaCheckCircle, FaLongArrowAltRight } from "react-icons/fa";
@@ -44,10 +45,10 @@ export default function SharedLayoutRight() {
                 </div>
               </div>
               <div className="buttons">
-                <a href="#" className="btn btn-medium btn-green">
+                <Link to="/" className="btn btn-medium btn-green">
                   Get More Information{" "}
                   <FaLongArrowAltRight className="fas fa-long-arrow-alt-right"></FaLongArrowAltRight>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

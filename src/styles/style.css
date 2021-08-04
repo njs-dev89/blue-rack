@@ -2904,3 +2904,8 @@ footer .partners {
   font-size: 18px;
   margin-bottom: 20px;
 }
+
+.gatsby-image-wrapper img {
+  position: absolute;
+  top: initial;
+}

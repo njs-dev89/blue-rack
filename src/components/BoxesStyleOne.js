@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
@@ -27,9 +28,9 @@ export default function BoxesStyleOne() {
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form
               </p>
-              <a href="#" className="btn btn-outline outline-dark btn-small">
+              <Link to="/" className="btn btn-outline outline-dark btn-small">
                 Get the deal
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -46,9 +47,9 @@ export default function BoxesStyleOne() {
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form
               </p>
-              <a href="#" className="btn btn-outline outline-dark btn-small">
+              <Link to="/" className="btn btn-outline outline-dark btn-small">
                 Get the deal
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -65,9 +66,9 @@ export default function BoxesStyleOne() {
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form
               </p>
-              <a href="#" className="btn btn-outline outline-dark btn-small">
+              <Link to="/" className="btn btn-outline outline-dark btn-small">
                 Get the deal
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -84,9 +85,9 @@ export default function BoxesStyleOne() {
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form
               </p>
-              <a href="#" className="btn btn-outline outline-dark btn-small">
+              <Link to="/" className="btn btn-outline outline-dark btn-small">
                 Get the deal
-              </a>
+              </Link>
             </div>
           </div>
         </div>

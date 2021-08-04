@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "gatsby";
 
 export default function LayoutTextRight() {
   return (
@@ -47,10 +48,10 @@ export default function LayoutTextRight() {
                 </div>
               </div>
               <div class="buttons">
-                <a href="#" class="btn btn-medium btn-green">
+                <Link to="/" class="btn btn-medium btn-green">
                   Get More Information
                   <i class="fas fa-long-arrow-alt-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

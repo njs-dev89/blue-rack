@@ -12,74 +12,63 @@ import {
 import "./HomeHeader.css";
 import { Col, Nav, Row, TabContent, TabPane } from "react-bootstrap";
 import { Tab } from "react-bootstrap";
+import { Link } from "gatsby";
+
+const data = {
+  tabOne: {
+    title: "Powerful Website Hosting",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it a more-or-less normal point of using Lorem Ipsum.",
+    price: "19.99/monthly",
+    link: "/",
+  },
+  tabTwo: {
+    title: "Powerful Website Hosting",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it a more-or-less normal point of using Lorem Ipsum.",
+    price: "11.99/monthly",
+    link: "/",
+  },
+  tabThree: {
+    title: "Powerful Website Hosting",
+    description:
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it a more-or-less normal point of using Lorem Ipsum.",
+    price: "7.99/monthly",
+    link: "/",
+  },
+};
 
 export default function HomeHeader() {
   return (
     <div className="home-carousel">
       <div className="left-sidebar">
         <div className="contact-links link-style">
-          <a /*data-toggle="modal" data-target="#myModal"*/>
+          <a>
             <FaPhone className="side-icon" />
           </a>
-          <a /*data-toggle="modal" data-target="#myModal"*/>
+          <a>
             <FaRegEnvelopeOpen className="side-icon" />
             <div className="notification">+</div>
           </a>
-          <a /*data-toggle="modal" data-target="#myModal"*/>
+          <a>
             <FaRegComments className="side-icon" />
           </a>
         </div>
         <div className="sidebar-socials link-style">
-          <a href="#">
+          <a href="/">
             <FaFacebookF className="side-icon" />
           </a>
-          <a href="#">
+          <a to="/">
             <FaInstagram className="side-icon" />
           </a>
-          <a href="#">
+          <a href="/">
             <FaTwitter className="side-icon" />
           </a>
-          <a href="#">
+          <a href="/">
             <FaLinkedinIn className="side-icon" />
           </a>
         </div>
       </div>
-      {/* <!-- MODAL  --> */}
-      {/* <div id="myModal" className="modal fade" role="dialog">
-        <div className="modal-dialog modal-sm"> */}
-      {/* <!-- Modal content--> */}
-      {/* <div className="modal-content">
-            <div className="modal-header">
-              <button type="button" className="close" data-dismiss="modal">
-                &times;
-              </button>
-              <h4 className="modal-title">Please feel free to contact us</h4>
-            </div>
-            <div className="modal-body">
-              <div className="modal-contact">
-                <i className="fa fa-phone"></i>
-                <h4>+1 (33) 456 5566</h4>
-              </div>
-              <div className="modal-contact">
-                <i className="fa fa-envelope"></i>
-                <h4>hello@youremail.com</h4>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-blue btn-small"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <!-- end of modal --> */}
-
-      {/* <!-- Left Sidebar ends here --> */}
       <div className="custom-width container">
         <Tab.Container defaultActiveKey="first">
           <TabContent className="tab-content">
@@ -92,24 +81,18 @@ export default function HomeHeader() {
                 <Col sm={6} className="col-sm-6">
                   <div className="text-container">
                     <div className="home-title animated fadeInLeft">
-                      <h2>Powerful Website Hosting</h2>
+                      <h2>{data.tabOne.title}</h2>
                       <h4 className="animation-text">
-                        Starting at $19.99/monthly
+                        Starting at ${data.tabOne.price}
                       </h4>
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is
-                        that it a more-or-less normal point of using Lorem
-                        Ipsum.
-                      </p>
+                      <p>{data.tabOne.description}</p>
                       <div className="buttons">
-                        <a
-                          href="#"
+                        <Link
+                          to={data.tabOne.link}
                           className="btn btn-medium btn-green btn-shadow"
                         >
                           Start a free trial
-                        </a>
+                        </Link>
                         <p>*No Credit Card Rquired</p>
                       </div>
                     </div>
@@ -141,21 +124,18 @@ export default function HomeHeader() {
                 <Col sm={6} className="col-sm-6">
                   <div className="text-container">
                     <div className="home-title animated fadeInLeft">
-                      <h2>Cloud Computing Services</h2>
+                      <h2>{data.tabTwo.title}</h2>
                       <h4 className="animation-text">
-                        Starting at $11.99/monthly
+                        Starting at ${data.tabTwo.price}
                       </h4>
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is
-                        that it a more-or-less normal point of using Lorem
-                        Ipsum.
-                      </p>
+                      <p>{data.tabTwo.description}</p>
                       <div className="buttons">
-                        <a href="#" className="btn btn-medium btn-green">
+                        <Link
+                          to={data.tabTwo.link}
+                          className="btn btn-medium btn-green"
+                        >
                           Start a free trial
-                        </a>
+                        </Link>
                         <p>*No Credit Card Rquired</p>
                       </div>
                     </div>
@@ -191,21 +171,18 @@ export default function HomeHeader() {
                 <Col sm={6} className="col-sm-6">
                   <div className="text-container">
                     <div className="home-title animated fadeInLeft">
-                      <h2>Business Shared Hosting</h2>
+                      <h2>{data.tabThree.title}</h2>
                       <h4 className="animation-text">
-                        Starting at $7.99/monthly
+                        Starting at ${data.tabThree.price}
                       </h4>
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is
-                        that it a more-or-less normal point of using Lorem
-                        Ipsum.
-                      </p>
+                      <p>{data.tabThree.description}</p>
                       <div className="buttons">
-                        <a href="#" className="btn btn-medium btn-green">
+                        <Link
+                          to={data.tabThree.link}
+                          className="btn btn-medium btn-green"
+                        >
                           Start a free trial
-                        </a>
+                        </Link>
                         <p>*No Credit Card Rquired</p>
                       </div>
                     </div>

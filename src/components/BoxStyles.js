@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import { FaCloud, FaPlus, FaServer } from "react-icons/fa";
 
@@ -47,12 +48,12 @@ export default function BoxStyles() {
                 </li>
               </ul>
               <div className="buttons">
-                <a href="#" className="btn btn-green btn-small">
+                <Link to="/" className="btn btn-green btn-small">
                   See offers <i className="fa fa-long-arrow-alt-right"></i>
-                </a>
-                <a href="#" className="btn btn-outline outline-dark btn-small">
+                </Link>
+                <Link to="/" className="btn btn-outline outline-dark btn-small">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -90,12 +91,12 @@ export default function BoxStyles() {
                 </li>
               </ul>
               <div className="buttons">
-                <a href="#" className="btn btn-green btn-small">
-                  See offers <i className="fa fa-long-arrow-alt-right"></i>
-                </a>
-                <a href="#" className="btn btn-outline outline-dark btn-small">
+                <Link to="/" className="btn btn-green btn-small">
+                  See offers
+                </Link>
+                <Link to="/" className="btn btn-outline outline-dark btn-small">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -130,12 +131,12 @@ export default function BoxStyles() {
                 </li>
               </ul>
               <div className="buttons">
-                <a href="#" className="btn btn-green btn-small">
+                <Link to="/" className="btn btn-green btn-small">
                   See offers <i className="fa fa-long-arrow-alt-right"></i>
-                </a>
-                <a href="#" className="btn btn-outline outline-dark btn-small">
+                </Link>
+                <Link to="/" className="btn btn-outline outline-dark btn-small">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

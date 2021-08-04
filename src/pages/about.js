@@ -10,7 +10,11 @@ import FeaturesStyleFour from "../components/FeaturesStyleFour";
 export default function contact() {
   return (
     <Layout>
-      <ContactPageHeader page="about" />
+      <ContactPageHeader
+        page="about"
+        title="10 years experience on website hosting"
+        description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some but the majority have suffered alteration in some form"
+      />
       <TeamMembers />
       <SectionWithImageBg />
       <FeaturesStyleFour />

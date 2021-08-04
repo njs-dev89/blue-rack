@@ -16,24 +16,16 @@ export default function TabSwitcher() {
             <div className="arrow-down">
               <div className="arrow-down-inner"></div>
             </div>
-            <Nav.Link eventKey="one" href="#home">
-              Wordpress Hosting
-            </Nav.Link>
+            <Nav.Link eventKey="one">Wordpress Hosting</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="two" href="#menu1">
-              Dedicated Servers
-            </Nav.Link>
+            <Nav.Link eventKey="two">Dedicated Servers</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="three" href="#menu2">
-              Cloud Computing
-            </Nav.Link>
+            <Nav.Link eventKey="three">Cloud Computing</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="four" href="#menu3">
-              E-commerce Hosting
-            </Nav.Link>
+            <Nav.Link eventKey="four">E-commerce Hosting</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>
@@ -137,10 +129,12 @@ export default function TabSwitcher() {
                     </div>
                     <div className="tab-lists">
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Fully Managed with unlimited Bandwidth</h4>
                           <p>
@@ -150,11 +144,14 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="100"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
+
                         <div className="text">
                           <h4>Multi procesors and ram memmories</h4>
                           <p>
@@ -164,11 +161,13 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="200"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Based on cloud computing and SSD Space</h4>
                           <p>
@@ -203,10 +202,12 @@ export default function TabSwitcher() {
                     </div>
                     <div className="tab-lists">
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Fully Managed with unlimited Bandwidth</h4>
                           <p>
@@ -216,11 +217,13 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="100"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Multi procesors and ram memmories</h4>
                           <p>
@@ -230,11 +233,13 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="200"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Based on cloud computing and SSD Space</h4>
                           <p>
@@ -269,10 +274,12 @@ export default function TabSwitcher() {
                     </div>
                     <div className="tab-lists">
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Fully Managed with unlimited Bandwidth</h4>
                           <p>
@@ -282,11 +289,13 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="100"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Multi procesors and ram memmories</h4>
                           <p>
@@ -296,11 +305,13 @@ export default function TabSwitcher() {
                         </div>
                       </div>
                       <div className="host-feature">
-                        <i
+                        <div
                           className="fa fa-check pull-left"
                           data-aos="zoom-in"
                           data-aos-delay="200"
-                        ></i>
+                        >
+                          <FaCheck />
+                        </div>
                         <div className="text">
                           <h4>Based on cloud computing and SSD Space</h4>
                           <p>

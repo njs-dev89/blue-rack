@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 export default function UnderFooter() {
@@ -8,12 +9,12 @@ export default function UnderFooter() {
           <div className="row">
             <div className="col-sm-8">
               <div className="under_footer_links">
-                <a href="#">About Us</a>
-                <a href="#">Sitemap</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Terms of services</a>
-                <a href="#">Privacy Policy</a>
+                <Link to="/">About Us</Link>
+                <Link to="/">Sitemap</Link>
+                <Link to="/">Careers</Link>
+                <Link to="/">Contact Us</Link>
+                <Link to="/">Terms of services</Link>
+                <Link to="/">Privacy Policy</Link>
               </div>
             </div>
           </div>

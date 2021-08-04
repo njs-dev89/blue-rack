@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 export default function CallToAction() {
   return (
@@ -14,10 +15,9 @@ export default function CallToAction() {
           </div>
           <div className="col-sm-6">
             <div className="buttons">
-              <a href="#" className="btn btn-outline btn-large">
+              <Link t="/" className="btn btn-outline btn-large">
                 Get more information{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
