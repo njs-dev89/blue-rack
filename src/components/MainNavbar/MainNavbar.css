@@ -34,6 +34,22 @@ a.navbar-btn {
   display: inline-block;
 }
 
+.navbar-btn:hover {
+  background: #14d468 !important;
+}
+
+.navbar-btn__green {
+  background: #14d468;
+  border-radius: 3px;
+  color: inherit;
+  padding: 10px 30px;
+  display: inline-block;
+}
+
+.navbar-btn__green:hover {
+  background: #14d468 !important;
+}
+
 .wrap-sticky nav.navbar {
   background: transparent;
   border-bottom: 0;
@@ -50,10 +66,6 @@ a.navbar-btn {
 }
 .wrap-sticky nav.navbar.sticked {
   z-index: 22;
-}
-
-.navbar-btn:hover {
-  background: #14d468 !important;
 }
 
 nav.navbar .title {
