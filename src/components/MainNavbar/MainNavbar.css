@@ -29,9 +29,11 @@ a.navbar-btn {
 .navbar-btn {
   background: #4270e4;
   border-radius: 3px;
-  color: inherit;
+  color: white;
   padding: 10px 30px;
   display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 8px 40px rgba(18, 9, 39, 0.13);
 }
 
 .navbar-btn:hover {
@@ -41,13 +43,15 @@ a.navbar-btn {
 .navbar-btn__green {
   background: #14d468;
   border-radius: 3px;
-  color: inherit;
+  color: white;
   padding: 10px 30px;
   display: inline-block;
+  box-shadow: 0 8px 40px rgba(18, 9, 39, 0.13);
+  text-decoration: none;
 }
 
 .navbar-btn__green:hover {
-  background: #14d468 !important;
+  background: #4270e4 !important;
 }
 
 .wrap-sticky nav.navbar {

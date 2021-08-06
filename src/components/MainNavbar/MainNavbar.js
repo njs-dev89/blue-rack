@@ -60,7 +60,7 @@ export default function MainNavbar() {
           <Nav.Item>
             <a
               href="https://serverpeek.com/client/register.php"
-              className="navbar-btn btn-shadow me-3"
+              className="navbar-btn me-3"
             >
               Sign up
             </a>
@@ -68,7 +68,7 @@ export default function MainNavbar() {
           <Nav.Item>
             <a
               href="https://serverpeek.com/client/index.php/login"
-              className="navbar-btn__green btn-shadow"
+              className="navbar-btn__green"
             >
               Client Area
             </a>
