@@ -57,22 +57,20 @@ export default function MainNavbar() {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <Nav.Item>
-            <a
-              href="https://serverpeek.com/client/register.php"
-              className="navbar-btn me-3"
-            >
-              Sign up
-            </a>
-          </Nav.Item>
-          <Nav.Item>
-            <a
-              href="https://serverpeek.com/client/index.php/login"
-              className="navbar-btn__green"
-            >
-              Client Area
-            </a>
-          </Nav.Item>
+
+          <a
+            href="https://serverpeek.com/client/register.php"
+            className="navbar-btn me-3"
+          >
+            Sign up
+          </a>
+
+          <a
+            href="https://serverpeek.com/client/index.php/login"
+            className="navbar-btn__green"
+          >
+            Client Area
+          </a>
         </Navbar.Collapse>
       </Container>
     </Navbar>
