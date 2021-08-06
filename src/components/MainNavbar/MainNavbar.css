@@ -30,7 +30,7 @@ a.navbar-btn {
   background: #4270e4;
   border-radius: 3px;
   color: white !important;
-  padding: 6px 24px;
+  padding: 10px 30px;
   display: inline-block;
   text-decoration: none;
   box-shadow: 0 8px 40px rgba(18, 9, 39, 0.13);
@@ -44,7 +44,7 @@ a.navbar-btn {
   background: #14d468;
   border-radius: 3px;
   color: white !important;
-  padding: 6px 24px;
+  padding: 10px 30px;
   display: inline-block;
   box-shadow: 0 8px 40px rgba(18, 9, 39, 0.13);
   text-decoration: none;
