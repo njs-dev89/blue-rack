@@ -38,6 +38,7 @@ a.navbar-btn {
 
 .navbar-btn:hover {
   background: #14d468 !important;
+  color: #4270e4;
 }
 
 .navbar-btn__green {
@@ -52,6 +53,7 @@ a.navbar-btn {
 
 .navbar-btn__green:hover {
   background: #4270e4 !important;
+  color: #14d468;
 }
 
 .wrap-sticky nav.navbar {
